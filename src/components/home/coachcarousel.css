@@ -1,0 +1,152 @@
+.carousel-container {
+  background-color: white; /* White background */
+  padding: 40px 0; /* Space above and below */
+}
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 32px;
+  padding: 10px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  position: relative;
+  flex: 0 0 auto;
+  width: 295px;
+  height: 400px;
+  border-radius: 60px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay on hover */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-item:hover .overlay {
+  opacity: 1;
+}
+
+/* View Profile Button */
+.view-profile {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.view-profile:hover {
+  background: #ddd;
+}
+
+/* Arrows */
+.carousel-arrow {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
+
+.carousel-arrow.left {
+  left: 10px;
+}
+
+.carousel-arrow.right {
+  right: 10px;
+}
+
+/* === Responsive === */
+
+/* Tablet ≤1024px */
+@media (max-width: 1024px) {
+  .carousel-item {
+    width: 240px;
+    height: 350px;
+    border-radius: 50px;
+  }
+  .view-profile {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Mobile landscape ≤768px */
+@media (max-width: 768px) {
+  .carousel-item {
+    width: 200px;
+    height: 300px;
+    border-radius: 40px;
+  }
+  .carousel {
+    gap: 20px;
+    padding: 5px;
+  }
+  .view-profile {
+    font-size: 13px;
+    padding: 6px 14px;
+  }
+  .carousel-arrow {
+    font-size: 20px;
+    padding: 6px 10px;
+  }
+}
+
+/* Small phones ≤480px */
+@media (max-width: 480px) {
+  .carousel-item {
+    width: 160px;
+    height: 240px;
+    border-radius: 30px;
+  }
+  .carousel {
+    gap: 16px;
+    padding: 5px;
+  }
+  .view-profile {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+  .carousel-arrow {
+    font-size: 18px;
+    padding: 5px 8px;
+  }
+}
