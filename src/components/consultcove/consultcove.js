@@ -8,7 +8,7 @@ const ConsultCove = () => {
       <a href="/" className="home-button">Home</a>
       <div className="cc-content">
         <img src="/asset/logo.png" alt="ConsultCove Logo" className="cc-logo" />
-        <h1 className="coming-soon-text">We're Coming soon.</h1>
+        <h1 className="coming-soon-text">Launching Soon: Stay Tuned</h1>
       </div>
     </div>
   );
