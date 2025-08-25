@@ -15,16 +15,15 @@ export default function Sctribe() {
   });
 
   const clearFilters = () => {
-  setFilters({
-    Sports: "",
-    Wellness: "",
-    Experience: "",
-    Locations: "",
-    CoachType: ""
-  });
-  setOpenDropdown(null); // also close any open dropdown
-};
-
+    setFilters({
+      Sports: "",
+      Wellness: "",
+      Experience: "",
+      Locations: "",
+      CoachType: ""
+    });
+    setOpenDropdown(null); // also close any open dropdown
+  };
 
   const dropdowns = {
     Sports: ["Boxing", "Wrestling", "MMA", "KickBoxing", "KungFu", "Muay Thai"],
@@ -33,8 +32,6 @@ export default function Sctribe() {
     Locations: ["USA", "Canada", "India", "Thailand", "UK", "UAE", "Cyprus"],
     CoachType: ["Super", "Regular"],
   };
-
-  
 
   const toggleDropdown = (name) => {
     setOpenDropdown(openDropdown === name ? null : name);
@@ -50,11 +47,25 @@ export default function Sctribe() {
     ...data
   }));
 
+  // --- CORRECTED FILTERING LOGIC ---
   const filteredCoaches = coachArray.filter((coach) => {
+    // If an experience filter is set, parse the numbers for comparison
+    const hasExperience = () => {
+      if (!filters.Experience) return true; // No filter selected, show all
+      
+      // Get the numerical value from strings like "2+ years"
+      const selectedExp = parseInt(filters.Experience);
+      const coachExp = parseInt(coach.Experience);
+
+      // Show the coach if their experience is greater than or equal to the filter
+      return coachExp >= selectedExp;
+    };
+
+    // Return coaches that match all active filters
     return (
       (!filters.Sports || coach.Sports === filters.Sports) &&
       (!filters.Wellness || coach.Wellness === filters.Wellness) &&
-      (!filters.Experience || coach.Experience === filters.Experience) &&
+      hasExperience() && // Use our new experience logic here
       (!filters.Locations || coach.Location === filters.Locations) &&
       (!filters.CoachType || coach.CoachType === filters.CoachType)
     );
@@ -65,54 +76,51 @@ export default function Sctribe() {
       <h1 className="sctribe-header">SPORTSCOVE TRIBE</h1>
       <p className="sctribe-title">Meet the Tribe. Find your Coach</p>
 
-{/* Filter Bar */}
-<div className="sctribe-filter-bar">
-  {Object.keys(dropdowns).map((category) => (
-    <div key={category} className="filter-wrapper">
-      <div
-        className="filter-item"
-        onClick={() => toggleDropdown(category)}
-      >
-        {filters[category] || category} <ChevronDown size={18} />
-      </div>
-      {openDropdown === category && (
-        <div className="dropdown-menu">
-          {dropdowns[category].map((item) => (
+      {/* Filter Bar */}
+      <div className="sctribe-filter-bar">
+        {Object.keys(dropdowns).map((category) => (
+          <div key={category} className="filter-wrapper">
             <div
-              className="dropdown-item"
-              key={item}
-              onClick={() => selectFilter(category, item)}
+              className="filter-item"
+              onClick={() => toggleDropdown(category)}
             >
-              {item}
+              {filters[category] || category} <ChevronDown size={18} />
             </div>
-          ))}
-        </div>
-      )}
-    </div>
-  ))}
+            {openDropdown === category && (
+              <div className="dropdown-menu">
+                {dropdowns[category].map((item) => (
+                  <div
+                    className="dropdown-item"
+                    key={item}
+                    onClick={() => selectFilter(category, item)}
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
 
-  {/* Clear Filters Button */}
-  <button className="clear-filters" onClick={clearFilters}>
-    Clear Filters
-  </button>
-</div>
-
+        {/* Clear Filters Button */}
+        <button className="clear-filters" onClick={clearFilters}>
+          Clear Filters
+        </button>
+      </div>
 
       {/* Coach Cards */}
-      {/* Coach Cards */}
-<div className="coach-grid">
-  {filteredCoaches.length > 0 ? (
-    filteredCoaches.map((coach) => (
-      <CoachCard key={coach.id} coach={coach} />
-    ))
-  ) : (
-    <div className="no-coaches">
-      <h2>No coaches match the selected filters</h2>
-      <p>Try adjusting your filters to explore more coaches.</p>
-    </div>
-  )}
-</div>
-
+      <div className="coach-grid">
+        {filteredCoaches.length > 0 ? (
+          filteredCoaches.map((coach) => (
+            <CoachCard key={coach.id} coach={coach} />
+          ))
+        ) : (
+          <div className="no-coaches">
+            <h2>No coaches match the selected filters</h2>
+            <p>Try adjusting your filters to explore more coaches.</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

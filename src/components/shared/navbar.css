@@ -74,41 +74,54 @@
 }
 
 /* Dropdown */
-.dropdown {
-  position: relative;
+
+/* The container for the "Products" link (the <li> element) */
+/* The navigation link that triggers the dropdown */
+.nav-link.dropdown {
+  position: relative; /* Required for positioning the dropdown-menu */
 }
 
+/* The dropdown menu container */
 .dropdown-menu {
+  /* No 'display: none' needed here */
+  display: flex; /* It should be a flex container when it renders */
   position: absolute;
   top: 100%;
   left: 0;
+  z-index: 1000;
+  
+  /* --- Row Layout --- */
+  flex-direction: column; 
+  width: max-content;
+  
+  /* --- Styling --- */
   background-color: black;
   border: 1px solid #333;
-  padding: 10px 0;
-  display: none; /* hidden by default */
-  flex-direction: column;
-  z-index: 1000;
-  min-width: 150px;
   border-radius: 6px;
+  padding: 8px;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: flex; /* show on hover */
+
+/* This class is used to show the dropdown (usually toggled with JavaScript) */
+.dropdown-menu.show {
+  display: flex; 
 }
 
+/* An individual item inside the dropdown */
 .dropdown-item {
   color: white;
   text-decoration: none;
   padding: 8px 16px;
+  border-radius: 4px; /* Apply radius here for consistent hover effect */
+  white-space: nowrap; /* Prevent items from wrapping to a new line */
   transition: background 0.2s ease, color 0.2s ease;
 }
 
+/* Hover effect for an individual item */
 .dropdown-item:hover {
   background: linear-gradient(to right, #CFFFA5, #074048);
   color: black;
-  border-radius: 4px;
 }
-
 @media (max-width: 768px) {
   .navbar {
     flex-direction: row;          /* keep items in a row */

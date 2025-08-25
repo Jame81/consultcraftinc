@@ -11,6 +11,7 @@ import Consultcove from './components/consultcove/consultcove';
 import Sctribe from './components/sctribe/sctribe';
 import TermsConditions from './components/termscondition/tc';
 import PrivacyPolicy from './components/privacypolicy/pp';
+import Insights from './components/insights/insights';
 
 import CoachProfile from './components/coachprofile/coachprofile';
 import './App.css';
@@ -34,6 +35,7 @@ function AppContent() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/termscondition" element={<TermsConditions />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/insights" element={<Insights />} />
 {/* <Route path="/privacypolicy" element={<PrivacyPolicy />} /> if you add PrivacyPolicy */}
 
 

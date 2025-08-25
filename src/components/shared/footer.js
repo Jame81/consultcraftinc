@@ -1,23 +1,31 @@
 'use client';
 
 import React from 'react';
-import { Link } from 'react-router-dom'; // ✅ Import Link
+import { Link, useNavigate } from 'react-router-dom'; // ✅ Import Link
 import './footer.css';
 import { FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate("/"); // navigate to home
+    window.scrollTo({ top: 0, behavior: "smooth" }); // scroll to top
+  };
   return (
     <footer className="footer">
       <div className="footer-content">
         
         {/* Left Section */}
         <div className="footer-section left">
-          <div className="logo-section">
-            <div className="logo-icon">
-              <img src="/asset/logo.png" alt="ConsultCraft Logo" />
-            </div>
-            <h2 className="company-name">ConsultCraft Inc</h2>
-          </div>
+ <div className="logo-section">
+      <div className="logo-link" onClick={handleLogoClick} style={{ cursor: "pointer", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <div className="logo-icon">
+          <img src="/asset/logo.png" alt="ConsultCraft Logo" />
+        </div>
+        <h2 className="company-name">ConsultCraft Inc</h2>
+      </div>
+    </div>
 
           <div className="contact-info">
             <div className="email-section">
@@ -69,12 +77,12 @@ const Footer = () => {
         <div className="footer-section center">
           <h3 className="footer-heading">Links</h3>
           <ul className="footer-links">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/products/sportscove">Products</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-            <li><Link to="/termscondition">T&C</Link></li>
-            <li><Link to="/privacypolicy">Privacy Policy</Link></li>
+            <li><Link to="/"onClick={() => window.scrollTo(0, 0)}>Home</Link></li>
+            <li><Link to="/about"onClick={() => window.scrollTo(0, 0)}>About</Link></li>
+            <li><Link to="/products/sportscove"onClick={() => window.scrollTo(0, 0)}>Products</Link></li>
+            <li><Link to="/contact"onClick={() => window.scrollTo(0, 0)}>Contact</Link></li>
+            <li><Link to="/termscondition"onClick={() => window.scrollTo(0, 0)}>T&C</Link></li>
+            <li><Link to="/privacypolicy"onClick={() => window.scrollTo(0, 0)}>Privacy Policy</Link></li>
           </ul>
           <div className="footer-bottom">
             ConsultCraft Inc © 2024–2025 All Rights Reserved

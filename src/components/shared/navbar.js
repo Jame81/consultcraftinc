@@ -1,95 +1,99 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import './navbar.css';
-import { FaBars, FaTimes } from 'react-icons/fa'; // hamburger & close icons
+import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from './logo.png';
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const toggleDropdown = () => setDropdownOpen(prev => !prev);
-  const closeDropdown = () => setDropdownOpen(false);
+  const dropdownRef = useRef(null);
 
   const toggleMobileMenu = () => setMobileMenuOpen(prev => !prev);
-  const closeMobileMenu = () => setMobileMenuOpen(false);
+  const closeAllMenus = () => {
+    setMobileMenuOpen(false);
+    setDropdownOpen(false);
+  };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
     <nav className="navbar">
+      {/* Logo */}
       <div className="navbar-logo">
         <img src={logo} alt="Logo" />
         <span className="navbar-brand">ConsultCraft</span>
       </div>
 
       {/* Hamburger Icon */}
-<div className="hamburger" onClick={toggleMobileMenu}>
-  {mobileMenuOpen ? <FaTimes /> : <FaBars />}
-</div>
+      <div className="hamburger" onClick={toggleMobileMenu}>
+        {mobileMenuOpen ? <FaTimes /> : <FaBars />}
+      </div>
 
-{/* Mobile Overlay */}
-{/* Mobile Overlay */}
-{mobileMenuOpen && (
-  <div className="mobile-overlay">
-    {/* Close Button (X) */}
-    <div className="close-btn" onClick={closeMobileMenu}>
-      <FaTimes />
-    </div>
+      {/* Mobile Overlay */}
+      {mobileMenuOpen && (
+        <div className="mobile-overlay">
+          <div className="close-btn" onClick={closeAllMenus}>
+            <FaTimes />
+          </div>
+          <ul className="mobile-links">
+            <li><NavLink to="/" end onClick={closeAllMenus}>Home</NavLink></li>
+            <li><NavLink to="/products/sportscove" onClick={closeAllMenus}>SportsCove</NavLink></li>
+            <li><NavLink to="/products/consultcove" onClick={closeAllMenus}>ConsultCove</NavLink></li>
+            <li><NavLink to="/about" onClick={closeAllMenus}>About</NavLink></li>
+            <li><NavLink to="/sctribe" onClick={closeAllMenus}>Sportscove Tribe</NavLink></li>
+            <li><NavLink to="/insights" onClick={closeAllMenus}>Insights</NavLink></li>
+            <li><NavLink to="/contact" onClick={closeAllMenus}>Contact</NavLink></li>
+          </ul>
+        </div>
+      )}
 
-    <ul className="mobile-links">
-      <li>
-        <NavLink to="/" end onClick={closeMobileMenu}>Home</NavLink>
-      </li>
-      <li>
-        <NavLink to="/products/sportscove" onClick={closeMobileMenu}>SportsCove</NavLink>
-      </li>
-      <li>
-        <NavLink to="/products/consultcove" onClick={closeMobileMenu}>ConsultCove</NavLink>
-      </li>
-      <li>
-        <NavLink to="/about" onClick={closeMobileMenu}>About</NavLink>
-      </li>
-      <li>
-        <NavLink to="/sctribe" onClick={closeMobileMenu}>Sportscove Tribe</NavLink>
-      </li>
-      <li>
-        <NavLink to="/contact" onClick={closeMobileMenu}>Contact</NavLink>
-      </li>
-    </ul>
-  </div>
-)}
+      {/* Desktop Links */}
+      <ul className="navbar-links">
+        <li><NavLink to="/" end className="nav-link" onClick={closeAllMenus}>Home</NavLink></li>
+        <li><NavLink to="/about" className="nav-link" onClick={closeAllMenus}>About</NavLink></li>
 
+        {/* Products Dropdown */}
+        <li ref={dropdownRef} className="nav-link dropdown">
+          <span
+            className="nav-link-text"
+            onClick={() => setDropdownOpen(prev => !prev)}
+          >
+            Products
+          </span>
 
-
-      {/* Links */}
-      <ul className={`navbar-links ${mobileMenuOpen ? 'active' : ''}`}>
-        <li>
-          <NavLink to="/" end className="nav-link" onClick={closeMobileMenu}>Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about" className="nav-link" onClick={closeMobileMenu}>About</NavLink>
-        </li>
-
-        {/* Products dropdown */}
-        <li className="nav-link dropdown">
-          <span className="nav-link-text" onClick={toggleDropdown}>Products</span>
           {dropdownOpen && (
             <div className="dropdown-menu">
-              <NavLink to="/products/sportscove" className="dropdown-item" onClick={() => { closeDropdown(); closeMobileMenu(); }}>
+              <NavLink
+                to="/products/sportscove"
+                className="dropdown-item"
+                onClick={closeAllMenus}
+              >
                 Sportscove
               </NavLink>
-              <NavLink to="/products/consultcove" className="dropdown-item" onClick={() => { closeDropdown(); closeMobileMenu(); }}>
+              <NavLink
+                to="/products/consultcove"
+                className="dropdown-item"
+                onClick={closeAllMenus}
+              >
                 Consultcove
               </NavLink>
             </div>
           )}
         </li>
 
-        <li>
-          <NavLink to="/sctribe" className="nav-link" onClick={closeMobileMenu}>Sportscove Tribe</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact" className="nav-link" onClick={closeMobileMenu}>Contact</NavLink>
-        </li>
+        <li><NavLink to="/sctribe" className="nav-link" onClick={closeAllMenus}>Sportscove Tribe</NavLink></li>
+        <li><NavLink to="/insights" className="nav-link" onClick={closeAllMenus}>Insights</NavLink></li>
+        <li><NavLink to="/contact" className="nav-link" onClick={closeAllMenus}>Contact</NavLink></li>
       </ul>
     </nav>
   );

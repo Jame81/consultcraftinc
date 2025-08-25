@@ -34,7 +34,7 @@ const ConsultCoveSection = () => {
           {/* Buttons */}
           <div className="consultcove-buttons">
             <a
-              href="https://forms.gle/your-google-form-link"
+              href="/products/consultcove"
               target="_blank"
               rel="noopener noreferrer"
               className="consultcove-btn"

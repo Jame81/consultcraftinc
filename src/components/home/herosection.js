@@ -1,6 +1,7 @@
 import React from 'react';
 import { ReactTyped } from 'react-typed';
 import './herosection.css';
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -39,9 +40,10 @@ const HeroSection = () => {
         through our innovative platforms for sports and consulting.
       </p>
       <div className="hero-buttons">
-        <button className="btn">Explore SportsCove →</button>
-        <button className="btn">Learn About ConsultCove</button>
-      </div>
+  <Link to="/products/sportscove" className="btn">Explore SportsCove →</Link>
+  <Link to="/products/consultcove" className="btn">Learn About ConsultCove</Link>
+</div>
+
       </div>
     </section>
   );
