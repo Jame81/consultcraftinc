@@ -35,7 +35,7 @@ export default function Contact() {
     // ▼▼▼▼▼   THIS IS THE ONLY LINE YOU NEED TO EDIT   ▼▼▼▼ //
     // Paste the URL you got from deploying your Google Apps Script here.
     
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzolebJrpTqT-iHzFDrWJn2rLMsI5S1leTfA4-srOiVBBrrnPR1fPfzZfX8BOZ_49o/exec'; 
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzZcROi6j4lr0okdFfnb6S7OFPbrqIaL_g9A1C5mys6Cx7v8c7kSOayX9BPHlIbA85g/exec'; 
     
     // ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ //
     // ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ //
