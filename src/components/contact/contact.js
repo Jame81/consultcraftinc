@@ -103,7 +103,7 @@ export default function Contact() {
             <div className="form-row">
               <input
                 type="text"
-                name="firstName"
+                name="Firstname"
                 placeholder="Your First Name"
                 value={formData.Firstname}
                 onChange={handleChange}
@@ -111,7 +111,7 @@ export default function Contact() {
               />
               <input
                 type="text"
-                name="lastName"
+                name="Lastname"
                 placeholder="Your Last Name"
                 value={formData.Lastname}
                 onChange={handleChange}
@@ -121,7 +121,7 @@ export default function Contact() {
             <div className="form-row">
               <input
                 type="tel"
-                name="phone"
+                name="Phone"
                 placeholder="Enter Your Phone Number"
                 value={formData.Phone}
                 onChange={handleChange}
@@ -129,7 +129,7 @@ export default function Contact() {
               />
               <input
                 type="email"
-                name="email"
+                name="Email"
                 placeholder="Enter Your Email"
                 value={formData.Email}
                 onChange={handleChange}
@@ -137,7 +137,7 @@ export default function Contact() {
               />
             </div>
             <textarea
-              name="message"
+              name="Message"
               placeholder="I would like to get in touch with you..."
               value={formData.Message}
               onChange={handleChange}
