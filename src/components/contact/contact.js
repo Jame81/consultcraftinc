@@ -105,7 +105,7 @@ export default function Contact() {
                 type="text"
                 name="firstName"
                 placeholder="Your First Name"
-                value={formData.firstName}
+                value={formData.Firstname}
                 onChange={handleChange}
                 required
               />
@@ -113,7 +113,7 @@ export default function Contact() {
                 type="text"
                 name="lastName"
                 placeholder="Your Last Name"
-                value={formData.lastName}
+                value={formData.Lastname}
                 onChange={handleChange}
                 required
               />
@@ -123,7 +123,7 @@ export default function Contact() {
                 type="tel"
                 name="phone"
                 placeholder="Enter Your Phone Number"
-                value={formData.phone}
+                value={formData.Phone}
                 onChange={handleChange}
                 required
               />
@@ -131,7 +131,7 @@ export default function Contact() {
                 type="email"
                 name="email"
                 placeholder="Enter Your Email"
-                value={formData.email}
+                value={formData.Email}
                 onChange={handleChange}
                 required
               />
@@ -139,7 +139,7 @@ export default function Contact() {
             <textarea
               name="message"
               placeholder="I would like to get in touch with you..."
-              value={formData.message}
+              value={formData.Message}
               onChange={handleChange}
               required
             />
