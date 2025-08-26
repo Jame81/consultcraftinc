@@ -3,7 +3,7 @@ import "./contact.css";
 import FAQ from "./faq";
 
 export default function Contact() {
-  // State to hold form data
+  // State to hold form data (camelCase fields to match Apps Script)
   const [formData, setFormData] = useState({
     Firstname: "",
     Lastname: "",
@@ -37,20 +37,22 @@ export default function Contact() {
     try {
       const response = await fetch(scriptURL, {
         method: "POST",
-        body: new URLSearchParams(formData), // 👈 Google Sheets prefers form-encoded
+        body: new URLSearchParams(formData), // Form-encoded data
       });
 
-      if (response.ok) {
+      const result = await response.json();
+
+      if (result.status === "success") {
         setSubmissionMessage("✅ Success! Your message has been sent.");
         setFormData({
-          firstName: "",
-          lastName: "",
-          phone: "",
-          email: "",
-          message: "",
+          Firstname: "",
+          Lastname: "",
+          Phone: "",
+          Email: "",
+          Message: "",
         });
       } else {
-        setSubmissionMessage("❌ Error: Failed to send message.");
+        setSubmissionMessage("❌ Error: " + result.message);
       }
     } catch (error) {
       console.error("Error!", error);
@@ -73,22 +75,14 @@ export default function Contact() {
           <div className="contact-info">
             <h3>Office</h3>
             <div className="info-row">
-              <img
-                src="/asset/destination.png"
-                alt="Location"
-                className="icon"
-              />
+              <img src="/asset/destination.png" alt="Location" className="icon" />
               <p>
                 US - 4520 W Oakeller Avenue <br />
                 Tampa, FL 33611 Suite #13348
               </p>
             </div>
             <div className="info-row">
-              <img
-                src="/asset/destination.png"
-                alt="Location"
-                className="icon"
-              />
+              <img src="/asset/destination.png" alt="Location" className="icon" />
               <p>
                 Canada - PO Box 73553, <br />
                 Vancouver RPO Downtown, BC, V6E 4L9, Canada
