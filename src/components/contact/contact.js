@@ -5,11 +5,11 @@ import FAQ from "./faq";
 export default function Contact() {
   // State to hold form data
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    phone: "",
-    email: "",
-    message: "",
+    Firstname: "",
+    Lastname: "",
+    Phone: "",
+    Email: "",
+    Message: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -32,7 +32,7 @@ export default function Contact() {
 
     // ✅ Your deployed Google Apps Script URL
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbxngzPm8b5Ets9arEXc5uHb7bhZpy2LUgw3NyXQYtU52ffpPb44x_6gp5JTTblPLh0l/exec";
+      "https://script.google.com/macros/s/AKfycbzmeMJfpg1UKkv2nJdcwXfmUBn68bG8RtYU9Rbz8-_bAGhh7WA8ZoN6DbaUKIhB-HIz/exec";
 
     try {
       const response = await fetch(scriptURL, {
