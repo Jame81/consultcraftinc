@@ -472,20 +472,11 @@ export const coaches = {
 
   aaron: {
     name: "AARON MATHEW",
+    Sports:"KickBoxing",
+    Wellness:"Yoga",
+    Experience:"5+ years",
     Location:"India",
     CoachType:"Super",
-    skills:{
-      KungFu:{
-        displayName:"KickBoxing",
-        category:"Sports",
-        experience:"2+ years"
-      },
-      Yoga:{
-        displayName: "Yoga",
-        category: "Wellness",
-        experience: "4+ years",
-      }
-    },
     coverPosition:"50% 10%",
     journeyPosition:"50% 10%",
     historyPosition:"50% 10%",
@@ -556,20 +547,11 @@ export const coaches = {
 
   abhishek: {
     name: "ABHISHEK NEGI",
+    Sports:"KungFu",
+    Wellness:"Meditation",
+    Experience:"2+ years",
     Location:"India",
     CoachType:"Super",
-    skills:{
-      KungFu:{
-        displayName:"KungFu",
-        category:"Sports",
-        experience:"2+ years"
-      },
-      Yoga:{
-        displayName: "Meditation",
-        category: "Wellness",
-        experience: "4+ years",
-      }
-    },
     coverPosition:"50% 10%",
     journeyPosition:"50% 10%",
     historyPosition:"50% 10%",
