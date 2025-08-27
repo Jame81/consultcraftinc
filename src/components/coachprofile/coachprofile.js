@@ -18,7 +18,7 @@ export default function CoachProfile() {
     <div className="overlap-scroll-container">
       {/* Back Button */}
       <button className="back-button" onClick={() => navigate(-1)}>
-        ← Back
+        ←
       </button>
 
       {/* Cover */}

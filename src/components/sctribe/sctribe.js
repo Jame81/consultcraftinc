@@ -22,7 +22,7 @@ export default function Sctribe() {
       Locations: "",
       CoachType: ""
     });
-    setOpenDropdown(null); // also close any open dropdown
+    setOpenDropdown(null);
   };
 
   const dropdowns = {
@@ -38,7 +38,13 @@ export default function Sctribe() {
   };
 
   const selectFilter = (category, value) => {
-    setFilters({ ...filters, [category]: value });
+    if (category === "Sports") {
+      setFilters({ ...filters, Sports: value, Wellness: "" });
+    } else if (category === "Wellness") {
+      setFilters({ ...filters, Sports: "", Wellness: value });
+    } else {
+      setFilters({ ...filters, [category]: value });
+    }
     setOpenDropdown(null);
   };
 
@@ -47,25 +53,37 @@ export default function Sctribe() {
     ...data
   }));
 
-  // --- CORRECTED FILTERING LOGIC ---
   const filteredCoaches = coachArray.filter((coach) => {
-    // If an experience filter is set, parse the numbers for comparison
-    const hasExperience = () => {
-      if (!filters.Experience) return true; // No filter selected, show all
-      
-      // Get the numerical value from strings like "2+ years"
-      const selectedExp = parseInt(filters.Experience);
-      const coachExp = parseInt(coach.Experience);
+    const activeSkillFilter = filters.Sports || filters.Wellness;
+    const activeCategory = filters.Sports ? "Sports" : "Wellness";
 
-      // Show the coach if their experience is greater than or equal to the filter
-      return coachExp >= selectedExp;
+    const matchesSkill = () => {
+      if (!activeSkillFilter) return true;
+
+      // New data structure check
+      if (coach.skills) {
+        return Object.values(coach.skills).some(
+          (skill) => skill.displayName === activeSkillFilter && skill.category === activeCategory
+        );
+      }
+      
+      // Fallback for old data structure
+      if (filters.Sports) return coach.Sports === filters.Sports;
+      if (filters.Wellness) return coach.Wellness === filters.Wellness;
+      
+      return false;
+    };
+    
+    const hasExperience = () => {
+        if (!filters.Experience) return true;
+        const selectedExp = parseInt(filters.Experience);
+        const coachExp = parseInt(coach.Experience || "0"); 
+        return coachExp >= selectedExp;
     };
 
-    // Return coaches that match all active filters
     return (
-      (!filters.Sports || coach.Sports === filters.Sports) &&
-      (!filters.Wellness || coach.Wellness === filters.Wellness) &&
-      hasExperience() && // Use our new experience logic here
+      matchesSkill() &&
+      hasExperience() &&
       (!filters.Locations || coach.Location === filters.Locations) &&
       (!filters.CoachType || coach.CoachType === filters.CoachType)
     );
@@ -76,7 +94,6 @@ export default function Sctribe() {
       <h1 className="sctribe-header">SPORTSCOVE TRIBE</h1>
       <p className="sctribe-title">Meet the Tribe. Find your Coach</p>
 
-      {/* Filter Bar */}
       <div className="sctribe-filter-bar">
         {Object.keys(dropdowns).map((category) => (
           <div key={category} className="filter-wrapper">
@@ -101,18 +118,20 @@ export default function Sctribe() {
             )}
           </div>
         ))}
-
-        {/* Clear Filters Button */}
         <button className="clear-filters" onClick={clearFilters}>
           Clear Filters
         </button>
       </div>
 
-      {/* Coach Cards */}
       <div className="coach-grid">
         {filteredCoaches.length > 0 ? (
           filteredCoaches.map((coach) => (
-            <CoachCard key={coach.id} coach={coach} />
+            <CoachCard
+              key={coach.id}
+              coachId={coach.id}
+              coach={coach}
+              activeFilters={filters}
+            />
           ))
         ) : (
           <div className="no-coaches">

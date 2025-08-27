@@ -25,7 +25,7 @@ const ConsultingAreasCarousel = () => {
 
   return (
     <div className="consulting-carousel-wrapper">
-      <h2 className="consulting-carousel-title">Consulting Areas We'll Cover</h2>
+      <h2 className="consulting-carousel-title">CONSULTING AREAS WE'LL COVER</h2>
 
       <div className="carousel-navigation">
         <button className="consulting-carousel-arrow left" onClick={() => scroll('left')}>

@@ -154,8 +154,8 @@
 
 /* Clear Filters Button */
 .clear-filters {
-  background: linear-gradient(135deg, #cfffa5, #074048);
-  color: white;
+  background: #cfffa5;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
@@ -166,7 +166,8 @@
 }
 
 .clear-filters:hover {
-  background: linear-gradient(135deg, #074048, #cfffa5);
+  background:#074048;
+  color: #ffffff;
   transform: scale(1.05);
 }
 

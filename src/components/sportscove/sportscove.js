@@ -68,7 +68,7 @@ export default function Sportscove() {
 
           {/* Right side - video */}
           <div className="sc-steps-right">
-            <video width="484" height="775" controls>
+            <video width="484" height="650" controls>
               <source src="/asset/SportsCove Intro Video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>

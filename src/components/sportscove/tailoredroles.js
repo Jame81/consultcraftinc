@@ -6,7 +6,7 @@ export default function TailoredRoles() {
     {
       title: "Guest Mode",
       description:
-        "Guest Mode lets new users explore the platform without signing up. They can browse coach profiles, view available sessions, and get a feel for the app’s features—making it easy to discover what's possible before committing.",
+        "Guest Mode lets new users explore the platform without signing up. They can browse coach profiles, view available sessions, and get a feel for the app’s features making it easy to discover what's possible before committing.",
       icon: "/asset/Guest (1).png"
     },
     {

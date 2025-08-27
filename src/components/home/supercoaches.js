@@ -17,7 +17,7 @@ const SuperCoachesSection = () => {
         Be the first to know when we launch. Early members get exclusive benefits!
       </p>
 
-      <h2 className="super-title">Our Super Coaches</h2>
+      <h2 className="super-title">OUR SUPER COACHES</h2>
       <p className="super-description">
         Hand picked Champions, Mentors of the Future. Our Super Coaches are elite athletes and master trainers
         dedicated to unlocking every athlete’s full potential.

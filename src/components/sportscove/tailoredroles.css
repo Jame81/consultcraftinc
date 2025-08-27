@@ -61,14 +61,14 @@
 
 /* --- Card Text --- */
 .role-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #111;
   margin-bottom: 10px;
 }
 
 .role-card p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #074048;
   line-height: 1.5;
 }

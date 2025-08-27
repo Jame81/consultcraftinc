@@ -1,15 +1,17 @@
 import React, { useState, useLayoutEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Linkedin, User } from 'lucide-react';
-import './teamcarousel.css'; // Your CSS file
+import './teamcarousel.css';
 
 const TeamCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  // 👇 Store item dimensions in state for dynamic calculations
   const [viewSettings, setViewSettings] = useState({
-    membersPerSlide: 4, // Default value
+    membersPerSlide: 4,
     lastIndex: 0,
+    itemWidth: 360, // Default card width
+    gap: 50,        // Default gap
   });
 
-  // Refs to measure the DOM elements
   const trackRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -28,34 +30,29 @@ const TeamCarousel = () => {
     { id: 11, name: "Poojitha Sharan", title: "Programs & Services Head", image: "/asset/team/poojitha.jpg", hasLinkedIn: true, linkedinUrl:"https://www.linkedin.com/in/poojita-sharan/" },
   ];
 
-  // This effect runs after the component mounts and on window resize
   useLayoutEffect(() => {
     const handleResize = () => {
       if (trackRef.current && containerRef.current) {
         const containerWidth = containerRef.current.offsetWidth;
-        // The width of a single item is its own width plus the gap from CSS
-        const itemWidth = trackRef.current.children[0].offsetWidth;
+        const itemWidth = trackRef.current.children[0]?.offsetWidth || 360;
         const gap = parseInt(window.getComputedStyle(trackRef.current).gap) || 20;
 
-        // Calculate how many full items can fit
         const membersPerSlide = Math.floor(containerWidth / (itemWidth + gap));
         const newLastIndex = teamMembers.length - membersPerSlide;
 
-        setViewSettings({ membersPerSlide, lastIndex: newLastIndex });
+        // 👇 Update the state with real-time dimensions
+        setViewSettings({ membersPerSlide, lastIndex: newLastIndex, itemWidth, gap });
 
-        // Safety check: if current index is out of bounds, reset it
         if (currentIndex > newLastIndex) {
-          setCurrentIndex(newLastIndex);
+          setCurrentIndex(newLastIndex < 0 ? 0 : newLastIndex);
         }
       }
     };
 
-    handleResize(); // Run on initial render
-    window.addEventListener('resize', handleResize); // Add listener for window resize
-
-    // Cleanup function to remove the listener
+    handleResize();
+    window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, [teamMembers.length, currentIndex]); // Rerun if these change
+  }, [teamMembers.length, currentIndex]);
 
   const prevSlide = () => {
     setCurrentIndex(prev => Math.max(prev - 1, 0));
@@ -65,13 +62,9 @@ const TeamCarousel = () => {
     setCurrentIndex(prev => Math.min(prev + 1, viewSettings.lastIndex));
   };
 
-  // The cardWidth and gap are now only used for the transform calculation
-  const cardWidth = 360; 
-  const gap = 20; 
-
   return (
     <section className="team-section">
-      <h2 className="team-heading">Meet Our Team</h2>
+      <h2 className="team-heading">MEET OUR TEAM</h2>
       <div className="carousel-wrapper">
         {currentIndex > 0 && (
           <button className="carousel-nav carousel-nav-left" onClick={prevSlide}>
@@ -79,38 +72,36 @@ const TeamCarousel = () => {
           </button>
         )}
 
-        {/* Add the ref to the container */}
         <div className="carousel-container" ref={containerRef}>
-          {/* Add the ref to the track */}
           <div
             className="carousel-track"
             ref={trackRef}
             style={{
-              transform: `translateX(-${currentIndex * (cardWidth + gap)}px)`,
+              // 👇 Use dynamic values from state for the transform
+              transform: `translateX(-${currentIndex * (viewSettings.itemWidth + viewSettings.gap)}px)`,
             }}
           >
             {teamMembers.map((member) => (
               <div key={member.id} className="team-card">
-                {/* Card content remains the same... */}
-                <div className="card-image">
-                  {member.image ? (
-                    <img src={member.image} alt={member.name} className="member-photo" />
-                  ) : (
-                    <div className="placeholder-image"><User size={48} /></div>
-                  )}
-                </div>
-                <div className="carousel-card-content">
-                  <h3 className="member-name">{member.name}</h3>
-                  <p className="member-title">{member.title}</p>
-                  {member.hasLinkedIn && member.linkedinUrl && (
-                    <div className="linkedin-icon">
-                      <a href={member.linkedinUrl} target="_blank" rel="noopener noreferrer">
-                        <Linkedin size={20} />
-                      </a>
-                    </div>
-                  )}
-                </div>
-              </div>
+                 <div className="card-image">
+                   {member.image ? (
+                     <img src={member.image} alt={member.name} className="member-photo" />
+                   ) : (
+                     <div className="placeholder-image"><User size={48} /></div>
+                   )}
+                 </div>
+                 <div className="carousel-card-content">
+                   <h3 className="member-name">{member.name}</h3>
+                   <p className="member-title">{member.title}</p>
+                   {member.hasLinkedIn && member.linkedinUrl && (
+                     <div className="linkedin-icon">
+                       <a href={member.linkedinUrl} target="_blank" rel="noopener noreferrer">
+                         <Linkedin size={20} />
+                       </a>
+                     </div>
+                   )}
+                 </div>
+               </div>
             ))}
           </div>
         </div>
@@ -120,8 +111,6 @@ const TeamCarousel = () => {
             <ChevronRight size={24} />
           </button>
         )}
-        {/* 👇 ADD THIS EMPTY DIV AT THE END 👇 */}
-        <div className="carousel-spacer"></div>
       </div>
     </section>
   );

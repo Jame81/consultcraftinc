@@ -38,13 +38,16 @@
   gap: 8px;
 }
 
-.coach-meta span {
+/* Apply pill-shape to BOTH spans and links inside the meta container */
+.coach-meta span, .coach-meta a {
   background-color: #CFFFA5;
   color: #074048;
   padding: 4px 10px;
   font-size: 14px;
   border-radius: 999px;
   font-weight: 500;
+  text-decoration: none; /* Removes the underline from links */
+  display: inline-block; /* Helps with consistent styling */
 }
 
 .coach-name {

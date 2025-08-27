@@ -62,17 +62,19 @@
 
 /* Arrows */
 .consulting-carousel-arrow {
-  background-color: black;
+  background-color: #111; /* Changed background for consistency */
   color: white;
   border: none;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  font-size: 20px;
+  width: 40px; /* Updated width */
+  height: 40px; /* Updated height */
   cursor: pointer;
   z-index: 10;
   margin: 0 10px;
   transition: background-color 0.3s;
+  display: flex; /* Added to center icon */
+  align-items: center; /* Added to center icon */
+  justify-content: center; /* Added to center icon */
 }
 
 .consulting-carousel-arrow:hover {

@@ -10,7 +10,7 @@ const About = () => {
     <div className="about-wrapper">
       {/* About Section */}
       <div className="about-page">
-        <h1 className="about-title">About Us</h1>
+        <h1 className="about-title">ABOUT US</h1>
         <p className="about-description">
           ConsultCraft Inc. is a global tech company building innovative web and mobile platforms that connect people in
           sports, business, and education. Founded in 2024 in Vancouver with operations in India and the U.S., our key
@@ -22,7 +22,7 @@ const About = () => {
       {/* Team Experience Section */}
       <div className="team-experience-section">
         <div className="team-text">
-          <h2>Team Experience</h2>
+          <h2>TEAM EXPERINCE</h2>
           <p>
             Our strength lies in our diverse, world-class team spanning continents with exceptional expertise from
             technology, sports, and business. Our global talent includes UK-educated UX designers and experienced engineers
@@ -42,7 +42,7 @@ const About = () => {
       </div>
       {/* Core Values Section */}
 <div className="core-values-section">
-  <h2 className="core-values-title">Core Values</h2>
+  <h2 className="core-values-title">CORE VALUES</h2>
   <div className="core-values-grid">
     <div className="core-value-card">
       <div className="core-value-icon">💡</div>
@@ -92,7 +92,7 @@ const About = () => {
 {/* Our Story Section */}
 <div className="our-story-section">
   <div className="our-story-text">
-    <h2>Our story</h2>
+    <h2>OUR STORY</h2>
     <p>
       At ConsultCraft Inc., we recognized a fundamental problem in the global coaching industry: despite being worth over $16 billion,
       talented coaches worldwide were trapped by geographical limitations, losing up to 40% of their earnings to middlemen, and struggling
@@ -117,7 +117,7 @@ const About = () => {
     <img src={require('./vision.jpg')} alt="Vision" />
   </div>
   <div className="vision-text">
-    <h2>Our Vision</h2>
+    <h2>OUR VISION</h2>
     <p>
       To be a global leader in innovative and ethical technology, pioneering the seamless integration of virtual and physical experiences
       that transform how the world learns, trains, and excels in sports and business. We envision a future where every professional can build
@@ -128,7 +128,7 @@ const About = () => {
 
   {/* Bottom Row */}
   <div className="mission-text">
-    <h2>Our Mission</h2>
+    <h2>OUR MISSION</h2>
     <p>
       Our mission is to empower professionals to monetize their expertise through coaching, content creation, and sponsorships, while enabling
       enthusiasts and learners to access quality training from a diverse selection of providers anywhere, anytime, and through any medium.

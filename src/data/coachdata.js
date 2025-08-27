@@ -46,10 +46,10 @@ export const coaches = {
     carouselImage: "/asset/siddhi-thakkar.png",
     subtitle1: "KickBoxing",
     subtitle2:"Boxing",
-    history: "A national silver medalist in kickboxing, a health entrepreneur, and the founder of Empower Her Journey, Siddhi Thakkar has turned personal pain into purpose. The turning point in Siddhi's life came from the deepest place of loss - she lost her mother to breast cancer, an experience that shook her world but also ignited a fire within. As she grieved, Siddhi began to recognize a troubling pattern—not just a lack of awareness around breast cancer, but a larger gap in accessible, reliable, and culturally relevant information about women's health.",
-    journey: "Siddhi's background as a national-level kickboxer adds to her credibility—she doesn't just talk about fitness and wellness, she lives it. She is also the co-founder of Protein Chef Café, a health-focused culinary venture founded by her brother, Kaushal Thakkar, that brings nutritious, protein-rich food options to the community. Her newly launched website empowerherjourney.in and YouTube channel are more than just platforms—they're safe havens for women to learn, share, and heal.",
+    history: "A national silver medalist in kickboxing, a health entrepreneur, and the founder of Empower Her Journey, Siddhi Thakkar has turned personal pain into purpose. The turning point in Siddhi's life came from the deepest place of loss - she lost her mother to breast cancer, an experience that shook her world but also ignited a fire within. As she grieved, Siddhi began to recognize a troubling pattern, not just a lack of awareness around breast cancer, but a larger gap in accessible, reliable, and culturally relevant information about women's health.",
+    journey: "Siddhi's background as a national-level kickboxer adds to her credibility, she doesn't just talk about fitness and wellness, she lives it. She is also the co-founder of Protein Chef Café, a health-focused culinary venture founded by her brother, Kaushal Thakkar, that brings nutritious, protein-rich food options to the community. Her newly launched website empower her journey in and YouTube channel are more than just platforms they're safe havens for women to learn, share, and heal.",
     smalltitle:"Empower Her: Wellness as a Movement",
-    meet: "Siddhi's initiative stands at the intersection of wellness, education, and empowerment. Through Empower Her Journey, she creates a trusted space for women to explore topics like breast health, hormonal wellness, and emotional balance. The platform hosts expert-led workshops, engaging content, and culturally relevant programs that speak to the real, everyday needs of women. With plans for online and offline workshops, curated health content, and real-life stories from brave women, this isn't just a platform—it's a movement that aims to drive systemic change in women's healthcare.",
+    meet: "Siddhi's initiative stands at the intersection of wellness, education, and empowerment. Through Empower Her Journey, she creates a trusted space for women to explore topics like breast health, hormonal wellness, and emotional balance. The platform hosts expert-led workshops, engaging content, and culturally relevant programs that speak to the real, everyday needs of women. With plans for online and offline workshops, curated health content, and real-life stories from brave women, this isn't just a platform, it's a movement that aims to drive systemic change in women's healthcare.",
     // trainWith: "Join Siddhi’s training sessions to enhance your performance."
   },
   jitesh: {
@@ -133,7 +133,7 @@ export const coaches = {
     history: "Efi Kalorkoti practices Reiki, a holistic method of energy healing which can be used complementary to western medicine for physical, mental and emotional issues. Her approach is rooted in the understanding that quantum physics has now proven that everything inside and outside our bodies is made out of energy. Through Reiki, she brings the universal healing energy inside the body, recalibrating our physical, mental and emotional states, helping individuals relax into their true self and reconnect to their essence.",
     journey: "The legitimacy and effectiveness of Reiki healing is demonstrated by its widespread acceptance in conventional healthcare settings. Reiki is widely used in the U.S. in over 800 hospitals during conventional treatments and rehabilitation periods. Such prestigious institutions include The Cleveland Clinic and The Brigham and Women's Hospital, where energy healing is integrated alongside traditional medical approaches to provide comprehensive patient care.",
     smalltitle:"Reconnecting the Soul: Healing Through Reiki",
-    meet: "Efi's mission extends beyond healing individual ailments—it's about guiding people on a journey to reconnect to their essence. In a world filled with stress, disconnection, and energetic imbalances, her Reiki practice serves as a sanctuary where individuals can return to their natural state of wholeness. Through the gentle channeling of universal life force energy, she helps clients release what no longer serves them and embrace their authentic selves, creating lasting transformation that ripples through all aspects of their lives.",
+    meet: "Efi's mission extends beyond healing individual ailments, it's about guiding people on a journey to reconnect to their essence. In a world filled with stress, disconnection, and energetic imbalances, her Reiki practice serves as a sanctuary where individuals can return to their natural state of wholeness. Through the gentle channeling of universal life force energy, she helps clients release what no longer serves them and embrace their authentic selves, creating lasting transformation that ripples through all aspects of their lives.",
     // trainWith: "Train with Jitesh to achieve your sporting dreams."
   },
 
@@ -150,9 +150,9 @@ export const coaches = {
     historyPosition:"50% 10%",
     meetPosition:"50% 10%",
     trainPosition:"50% 10%",
-    secondImage: "/asset/supercoaches/dylan/Dylan03 (1).webp",
+    secondImage: "/asset/supercoaches/dylan/dylan.webp",
     thirdImage: "/asset/supercoaches/dylan/dylan_mma.jpg",
-    fourthImage: "/asset/supercoaches/dylan/Dylan (1).webp",
+    fourthImage: "/asset/supercoaches/dylan/Dylan1.webp",
     carouselImage: "/asset/dylan-lockard.png",
     subtitle1: "MMA",
     // subtitle2:"Head Coach & Founder of ICSA",
@@ -249,12 +249,12 @@ export const coaches = {
     Location:"India",
     CoachType:"Super",
     thumbnail:"/asset/thumbnails/Anisha Wali.png",
-    coverPosition:"50% 10%",
-    journeyPosition:"center",
+    coverPosition:"50% 40%",
+    journeyPosition:"50% 80%",
     historyPosition:"center",
     meetPosition:"center",
     trainPosition:"center",
-    coverImage: "/asset/supercoaches/anisha/anisha wali 2 (1).png",
+    coverImage: "/asset/supercoaches/anisha/anisha_wali1.png",
     secondImage: "/asset/supercoaches/anisha/anisha_wali_yoga.png",
     thirdImage: "/asset/supercoaches/anisha/anisha_wali.png",
     fourthImage: "/asset/supercoaches/anisha/anisha_yoga.png",
@@ -343,9 +343,9 @@ export const coaches = {
     trainPosition:"50% 10%",
     thumbnail:"/asset/thumbnails/Niranjan.png",
     coverImage: "/asset/supercoaches/niranjan/niranjan_mma.png",
-    secondImage: "/asset/supercoaches/niranjan/niranjan_phabhoujam.png",
+    secondImage: "/asset/supercoaches/niranjan/niranjan_phaboujam.png",
     thirdImage: "/asset/supercoaches/niranjan/niranjan_mma.png",
-    fourthImage: "/asset/supercoaches/niranjan/niranjan_phabhoujam.png",
+    fourthImage: "/asset/supercoaches/niranjan/niranjan_phaboujam.png",
     carouselImage: "/asset/niranjan.png",
     subtitle1: "MMA",
     // subtitle2:"Head Coach & Founder of ICSA",
@@ -359,19 +359,28 @@ export const coaches = {
 
   ben: {
     name: "BEN BARRY",
-    Sports:"KungFu",
-    Wellness:"Yoga",
-    Experience:"2+ years",
     Location:"UK",
     CoachType:"Super",
-    coverPosition:"50% 10%",
+    skills:{
+      KungFu:{
+        displayName:"KungFu",
+        category:"Sports",
+        experience:"2+ years"
+      },
+      Yoga:{
+        displayName: "Yoga",
+        category: "Wellness",
+        experience: "4+ years",
+      }
+    },
+    coverPosition:"50% 50%",
     journeyPosition:"50% 10%",
-    historyPosition:"50% 10%",
+    historyPosition:"50% 50%",
     meetPosition:"50% 10%",
     trainPosition:"50% 10%",
     thumbnail:"/asset/thumbnails/Ben Barry.png",
-    coverImage: "/asset/supercoaches/ben/Ben Barry05 (1).png",
-    secondImage: "/asset/supercoaches/ben/ben_barry_yoga.png",
+    secondImage: "/asset/supercoaches/ben/Ben_barry_1.png",
+    coverImage: "/asset/supercoaches/ben/ben_barry_yoga.png",
     thirdImage: "/asset/supercoaches/ben/ben_barry.png",
     fourthImage: "/asset/supercoaches/ben/Ben01.jpg",
     carouselImage: "/asset/ben.png",
@@ -427,10 +436,10 @@ export const coaches = {
     subtitle1: "KickBoxing",
     // // subtitle2:"Head Coach & Founder of ICSA",
     // // subtitle3:"22+ Years of Combat Sports Experience",
-    history: "Sam represents the grit and determination of Indian kickboxing, rising from Chellanam, a small coastal village in Ernakulam, Kerala, to compete on national and international stages. Coming from a financially challenged background, his journey began with the sacrifice of his mother, who pledged her gold to fund his first championship — a moment that ignited his competitive path. Today, Sam is a 2× international silver medalist, 3× national medalist, state referee for WAKO Kerala, and committee member of KSAKA. His ability to excel as both a high-level athlete and a respected official reflects not only technical mastery and fight intelligence, but also a deep commitment to the sport’s growth and integrity. Sam’s story stands as a testament to resilience, discipline, and the will to rise above all odds.",
-    journey: "Sam’s journey from Chellanam, a small coastal village in Kerala, to national and international kickboxing success is built on resilience, sacrifice, discipline, integrity, and empowerment. From overcoming financial hardship — starting with his mother pledging her gold to fund his first championship — to earning multiple medals, he blends precision, strategy, and respect for the sport. As a WAKO Kerala referee and KSAKA committee member, he upholds fairness and inspires the next generation to chase their dreams with dedication and belief..",
+    history: "Sam represents the grit and determination of Indian kickboxing, rising from Chellanam, a small coastal village in Ernakulam, Kerala, to compete on national and international stages. Coming from a financially challenged background, his journey began with the sacrifice of his mother, who pledged her gold to fund his first championship , a moment that ignited his competitive path. Today, Sam is a 2× international silver medalist, 3× national medalist, state referee for WAKO Kerala, and committee member of KSAKA. His ability to excel as both a high-level athlete and a respected official reflects not only technical mastery and fight intelligence, but also a deep commitment to the sport’s growth and integrity. Sam’s story stands as a testament to resilience, discipline, and the will to rise above all odds.",
+    journey: "Sam’s journey from Chellanam, a small coastal village in Kerala, to national and international kickboxing success is built on resilience, sacrifice, discipline, integrity, and empowerment. From overcoming financial hardship, starting with his mother pledging her gold to fund his first championship, to earning multiple medals, he blends precision, strategy, and respect for the sport. As a WAKO Kerala referee and KSAKA committee member, he upholds fairness and inspires the next generation to chase their dreams with dedication and belief..",
     smalltitle:"Fueled by Sacrifice: Coaching with Discipline, Technique, and Heart",
-    meet: "For Sam, the turning point came long before the bright lights of the ring — it happened in Chellanam, Kerala when his mother pledged her gold so he could compete in his first championship. That act of sacrifice became the fuel for every fight, every medal, and every moment he stepped into the arena. From those humble beginnings, Sam went on to become a 2× international silver medalist, 3× national medalist, and a trusted figure in the sport as a WAKO Kerala state referee and KSAKA committee member. His coaching and mentoring philosophy mirrors his own journey: rooted in discipline, sharp technique, and the belief that with the right mindset, no obstacle is too great.",
+    meet: "For Sam, the turning point came long before the bright lights of the ring, it happened in Chellanam, Kerala when his mother pledged her gold so he could compete in his first championship. That act of sacrifice became the fuel for every fight, every medal, and every moment he stepped into the arena. From those humble beginnings, Sam went on to become a 2× international silver medalist, 3× national medalist, and a trusted figure in the sport as a WAKO Kerala state referee and KSAKA committee member. His coaching and mentoring philosophy mirrors his own journey: rooted in discipline, sharp technique, and the belief that with the right mindset, no obstacle is too great.",
     // trainWith: "Train with Jitesh to achieve your sporting dreams."
   },
   
@@ -446,7 +455,7 @@ export const coaches = {
     meetPosition:"50% 10%",
     trainPosition:"50% 10%",
     thumbnail:"/asset/thumbnails/Tanish Gupta.png",
-    coverImage: "/asset/supercoaches/tanish/tanish_(2).jpg",
+    coverImage: "/asset/supercoaches/tanish/tanish_2.jpg",
     secondImage: "/asset/supercoaches/tanish/tanish_brazilianjiujitsu.jpg",
     thirdImage: "/asset/supercoaches/tanish/tanish_mma.jpg",
     fourthImage: "/asset/supercoaches/tanish/tanish_gupta.png",
@@ -463,11 +472,20 @@ export const coaches = {
 
   aaron: {
     name: "AARON MATHEW",
-    Sports:"KickBoxing",
-    Wellness:"Yoga",
-    Experience:"5+ years",
     Location:"India",
     CoachType:"Super",
+    skills:{
+      KungFu:{
+        displayName:"KickBoxing",
+        category:"Sports",
+        experience:"2+ years"
+      },
+      Yoga:{
+        displayName: "Yoga",
+        category: "Wellness",
+        experience: "4+ years",
+      }
+    },
     coverPosition:"50% 10%",
     journeyPosition:"50% 10%",
     historyPosition:"50% 10%",
@@ -538,20 +556,29 @@ export const coaches = {
 
   abhishek: {
     name: "ABHISHEK NEGI",
-    Sports:"KungFu",
-    Wellness:"Meditation",
-    Experience:"2+ years",
     Location:"India",
     CoachType:"Super",
+    skills:{
+      KungFu:{
+        displayName:"KungFu",
+        category:"Sports",
+        experience:"2+ years"
+      },
+      Yoga:{
+        displayName: "Meditation",
+        category: "Wellness",
+        experience: "4+ years",
+      }
+    },
     coverPosition:"50% 10%",
     journeyPosition:"50% 10%",
     historyPosition:"50% 10%",
     meetPosition:"50% 10%",
     trainPosition:"50% 10%",
     thumbnail:"/asset/thumbnails/Abhishek Negi.png",
-    coverImage: "/asset/supercoaches/abhishek/Abhishek Negi - Kung Fu (2).png",
-    secondImage: "/asset/supercoaches/abhishek/abhishek01 (1).png",
-    thirdImage: "/asset/supercoaches/abhishek/Abhishek Negi- Kung Fu 3 (1).png",
+    coverImage: "/asset/supercoaches/abhishek/abhishek_negi_2+.png",
+    secondImage: "/asset/supercoaches/abhishek/abhishek_negi_kungfu.png",
+    thirdImage: "/asset/supercoaches/abhishek/abhishek_negi_meditation.png",
     fourthImage: "/asset/supercoaches/abhishek/abhishek_negi.HEIC",
     carouselImage: "/asset/abhishek.png",
     subtitle1: "KungFu",
@@ -604,9 +631,9 @@ export const coaches = {
     trainPosition:"50% 10%",
     thumbnail:"/asset/thumbnails/AsiM Bin Al Dayani.png",
     coverImage: "/asset/supercoaches/asim/asim_bin_al_dayani.JPG",
-    secondImage: "/asset/supercoaches/asim_bin_al.JPG",
-    thirdImage: "/asset/supercoaches/asim_bin.JPG",
-    fourthImage: "/asset/supercoaches/asim.JPG",
+    secondImage: "/asset/supercoaches/asim/asim_bin_al.JPG",
+    thirdImage: "/asset/supercoaches/asim/asim_bin.JPG",
+    fourthImage: "/asset/supercoaches/asim/asim.JPG",
     carouselImage: "/asset/asim.png",
     subtitle1: "Muay Thai",
     subtitle2:"KickBoxing",
@@ -615,9 +642,9 @@ export const coaches = {
     subtitle5:"7× Indian National Muay Thai Champion",
     subtitle6:"2× Indian National Kickboxing Champion",
     history: "Asim Bin Saleh Al Dayani embodies the fighting spirit of Indian combat sports, emerging from Barkas, Hyderabad, to become one of the nation’s most decorated Muay Thai and kickboxing athletes. A 5× Muay Thai National Champion and 2× Kickboxing National Champion, Asim has showcased his striking mastery across 24 bouts, earning 19 victories and making his mark in both domestic and international arenas. From clinching WMC State and National titles to representing India at the UAE Muay Thai Nation Championship, where he secured a podium finish, Asim’s career reflects a relentless pursuit of excellence and a readiness to test his skills against the best. His adaptability across Muay Thai, kickboxing, and MMA, combined with a warrior’s mentality, technical precision, and global fight experience, cements his reputation as one of India’s most formidable and versatile strikers.",
-    journey: "Asim Bin Saleh Al Dayani represents the peak of Indian striking excellence, rising from Barkas, Hyderabad, to claim five Muay Thai national titles, two national kickboxing championships, and prestigious WMC State and National belts. Competing across Muay Thai, kickboxing, and MMA, Asim has demonstrated the technical precision, tactical adaptability, and mental toughness that define elite combat athletes. His journey from national-level amateur success to professional and international competition — including a podium finish at the UAE Muay Thai Nation Championship — reflects his relentless pursuit of mastery and his ability to perform under pressure. This championship pedigree positions Asim as one of India’s most versatile and accomplished strikers, capable of inspiring and guiding the next generation of fighters.",
+    journey: "Asim Bin Saleh Al Dayani represents the peak of Indian striking excellence, rising from Barkas, Hyderabad, to claim five Muay Thai national titles, two national kickboxing championships, and prestigious WMC State and National belts. Competing across Muay Thai, kickboxing, and MMA, Asim has demonstrated the technical precision, tactical adaptability, and mental toughness that define elite combat athletes. His journey from national-level amateur success to professional and international competition, including a podium finish at the UAE Muay Thai Nation Championship, reflects his relentless pursuit of mastery and his ability to perform under pressure. This championship pedigree positions Asim as one of India’s most versatile and accomplished strikers, capable of inspiring and guiding the next generation of fighters.",
     smalltitle:"From Barkas to the World Stage: Championing Discipline and Precision",
-    meet: "Asim Bin Saleh Al Dayani’s coaching philosophy is built on the journey that took him from training for self-defence in Barkas, Hyderabad, to standing on national and international podiums as a champion. His rise to five Muay Thai national titles, two national kickboxing championships, and WMC State and National belts reflects the discipline, adaptability, and technical mastery that define his approach. Blending timeless striking fundamentals — balance, guard, footwork, and precision — with the tactical versatility of Muay Thai, kickboxing, and MMA, Asim tailors his training for beginners, fitness enthusiasts, and competitive fighters alike. His championship credentials and passion for developing the next generation of martial artists make him a mentor who teaches not just technique, but the mindset to excel at every level of competition.",
+    meet: "Asim Bin Saleh Al Dayani’s coaching philosophy is built on the journey that took him from training for self-defence in Barkas, Hyderabad, to standing on national and international podiums as a champion. His rise to five Muay Thai national titles, two national kickboxing championships, and WMC State and National belts reflects the discipline, adaptability, and technical mastery that define his approach. Blending timeless striking fundamentals, balance, guard, footwork, and precision, with the tactical versatility of Muay Thai, kickboxing, and MMA, Asim tailors his training for beginners, fitness enthusiasts, and competitive fighters alike. His championship credentials and passion for developing the next generation of martial artists make him a mentor who teaches not just technique, but the mindset to excel at every level of competition.",
     // trainWith: "Train with Jitesh to achieve your sporting dreams."
   },
 
@@ -641,10 +668,10 @@ export const coaches = {
     subtitle1: "KickBoxing",
     // // subtitle2:"Head Coach & Founder of ICSA",
     // // subtitle3:"22+ Years of Combat Sports Experience",
-    history: "Salvin Francis stands out as a multi-disciplinary combat sports athlete, excelling in kickboxing, wushu, and MMA with a track record of consistent podium finishes. A national kickboxing medalist and international representative, he has also earned 4 national medals in wushu, proving his adaptability across striking arts. Beyond competition, Salvin serves as a kickboxing state referee and KSAKA committee member, ensuring fairness and professionalism in the sport. His versatility is further highlighted by success in state-level MMA under STMMA. Coming from Chellanam, a coastal village in Ernakulam, Kerala, Salvin’s rise from financial struggles to becoming a respected athlete and official showcases both grit and leadership — making him a force inside the cage and a role model beyond it.",
+    history: "Salvin Francis stands out as a multi-disciplinary combat sports athlete, excelling in kickboxing, wushu, and MMA with a track record of consistent podium finishes. A national kickboxing medalist and international representative, he has also earned 4 national medals in wushu, proving his adaptability across striking arts. Beyond competition, Salvin serves as a kickboxing state referee and KSAKA committee member, ensuring fairness and professionalism in the sport. His versatility is further highlighted by success in state-level MMA under STMMA. Coming from Chellanam, a coastal village in Ernakulam, Kerala, Salvin’s rise from financial struggles to becoming a respected athlete and official showcases both grit and leadership, making him a force inside the cage and a role model beyond it.",
     journey: "Salvin Francis embodies versatility in combat, with proven success in wushu, kickboxing, and MMA, backed by consistent podium finishes at national and international levels. His integrity in sport shines through his role as a state referee and KSAKA committee member, ensuring fairness and professionalism. Guided by discipline and mastery, he combines technical precision with a relentless training ethic. Rising from financial struggles in his coastal village of Chellanam to national recognition, Salvin serves as an inspiration for the next generation of fighters, showing that dedication can turn challenges into triumphs.",
     smalltitle:"The Adaptive Warrior: Mastering Multiple Combat Sports",
-    meet: "For Salvin Francis, the defining moment came when he realized that his combat sports journey would be built not just on winning, but on mastering multiple disciplines. Transitioning from wushu — where he earned multiple national medals — to kickboxing and eventually MMA, he proved that true champions adapt, evolve, and thrive under any ruleset. Growing up in financial hardship in Chellanam, Salvin faced challenges in affording training and traveling to competitions. Yet, those struggles forged resilience. Today, he blends sharp striking fundamentals, tactical fight planning, and the ability to switch seamlessly between sports. As a referee and committee member, he also upholds the values and standards of the game, shaping both fighters and the sport’s future.",
+    meet: "For Salvin Francis, the defining moment came when he realized that his combat sports journey would be built not just on winning, but on mastering multiple disciplines. Transitioning from wushu, where he earned multiple national medals, to kickboxing and eventually MMA, he proved that true champions adapt, evolve, and thrive under any ruleset. Growing up in financial hardship in Chellanam, Salvin faced challenges in affording training and traveling to competitions. Yet, those struggles forged resilience. Today, he blends sharp striking fundamentals, tactical fight planning, and the ability to switch seamlessly between sports. As a referee and committee member, he also upholds the values and standards of the game, shaping both fighters and the sport’s future.",
     // trainWith: "Train with Jitesh to achieve your sporting dreams."
   },
 
