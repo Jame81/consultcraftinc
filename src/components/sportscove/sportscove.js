@@ -1,17 +1,22 @@
 import React from 'react';
 import "./sportscove.css";
+import { Helmet } from 'react-helmet-async'; 
 // import sportsCoveVideo from '/asset/SportsCove Intro Video.mp4'; // Import video file
 import TailoredRoles from './tailoredroles';
 
 export default function Sportscove() {
   return (
     <div>
+      <Helmet>
+        <title>SportsCove | Your Global Sports & Wellness Marketplace</title>
+        <meta name="description" content="SportsCove is a marketplace app that unifies the global sports and wellness industry. Find coaches, book sessions, and track your growth seamlessly." />
+      </Helmet>
       {/* Background image */}
       <section className="sportscove-hero"></section>
 
       {/* Info section */}
       <section className="sportsCove-info">
-        <h2>What is SportsCove?</h2>
+        <h2>WHAT IS SPORTSCOVE ?</h2>
         <div className="sportsCove-card">
           <p>
             <strong>SportsCove</strong> is a Marketplace App and Platform that
@@ -32,7 +37,7 @@ export default function Sportscove() {
 
       {/* Section: How SportsCove Works */}
       <section className="sc-steps-section">
-        <h2 className="sc-steps-title">How SportsCove Works?</h2>
+        <h2 className="sc-steps-title">HOW SPORTSCOVE WORKS ?</h2>
         <div className="sc-steps-container">
           
           {/* Left side */}
@@ -67,12 +72,13 @@ export default function Sportscove() {
           </div>
 
           {/* Right side - video */}
-          <div className="sc-steps-right">
-            <video width="484" height="650" controls>
-              <source src="/asset/SportsCove Intro Video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+         {/* Right side - video */}
+<div className="sc-steps-right">
+  <video className="sc-video" controls>
+    <source src="/asset/SportsCove Intro Video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
         </div>
       </section>
 

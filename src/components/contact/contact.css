@@ -75,6 +75,18 @@
   line-height: 1.6;
 }
 
+/* Add this CSS anywhere in your contact.css file */
+
+.info-grid {
+  display: flex; /* Arranges children side-by-side */
+  gap: 20px;     /* Adds space between the columns */
+  margin-top: 20px; /* Adds some space above this section */
+}
+
+.info-column {
+  flex: 1; /* Makes each column take up equal space */
+}
+
 .contact-info h3 {
   margin: 16px 0 8px;
   font-size: 16px;

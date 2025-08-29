@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./contact.css";
+import { Helmet } from 'react-helmet-async';
 import FAQ from "./faq";
 
 export default function Contact() {
@@ -64,6 +65,10 @@ export default function Contact() {
 
   return (
     <div className="contact-section">
+      <Helmet>
+        <title>Contact Us | ConsultCraft Inc.</title>
+        <meta name="description" content="Get in touch with the ConsultCraft Inc. team. Collaborate, create, or just chat—we're here to listen. Find our office locations and contact details." />
+      </Helmet>
       <div className="contact-wrapper">
         {/* Left Side */}
         <div className="contactform-left">
@@ -88,12 +93,21 @@ export default function Contact() {
                 Vancouver RPO Downtown, BC, V6E 4L9, Canada
               </p>
             </div>
-            <h3>Mail</h3>
-            <p>sc-support@consultcraftinc.com</p>
-            <p>info@consultcraftinc.com</p>
-            <h3>Contact</h3>
-            <p>+1 (206) 457-6678</p>
-            <p>+91-7070175888</p>
+            {/* This is the new wrapper for your two columns */}
+<div className="info-grid">
+  {/* Column 1: Mail */}
+  <div className="info-column">
+    <h3>Mail</h3>
+    <p>sc-support@consultcraftinc.com</p>
+    <p>info@consultcraftinc.com</p>
+  </div>
+  {/* Column 2: Contact */}
+  <div className="info-column">
+    <h3>Contact</h3>
+    <p>+1 (206) 457-6678</p>
+    <p>+91-7070175888</p>
+  </div>
+</div>
           </div>
         </div>
 

@@ -1,8 +1,15 @@
 .super-coaches-section {
   text-align: center;
   padding: 60px 20px;
-  background-color: #fff;
+  background-color: #fff !important; /* Force white background */
   color: #000;
+  width: 100vw; /* Full viewport width */
+  margin: 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .waitlist-btn {

@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { HelmetProvider } from 'react-helmet-async'; // <-- 1. IMPORT HELMET
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <HelmetProvider> {/* <-- 2. WRAP YOUR APP */}
+      <App />
+    </HelmetProvider>
   </React.StrictMode>
 );
 

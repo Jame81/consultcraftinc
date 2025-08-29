@@ -33,13 +33,14 @@ const CoachCarousel = () => {
   }, [userHasClickedRight]);
 
   return (
-    <div className="carousel-container">
-      <div className="carousel-wrapper">
-        {showLeftArrow && (
-          <button className="carousel-arrow left" onClick={() => scroll('left')}>
-            &#8249;
-          </button>
-        )}
+    <section className="coach-carousel-section">
+      <div className="carousel-container">
+        <div className="carousel-wrapper">
+          {showLeftArrow && (
+            <button className="carousel-arrow left" onClick={() => scroll('left')}>
+              &#8249;
+            </button>
+          )}
 
         <div className="carousel" ref={carouselRef}>
           {Object.entries(coaches)
@@ -64,6 +65,7 @@ const CoachCarousel = () => {
         </button>
       </div>
     </div>
+    </section>
   );
 };
 

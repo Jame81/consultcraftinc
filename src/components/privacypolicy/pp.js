@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from 'react-helmet-async';
 import "./pp.css";
 
 const PrivacyPolicy = () => {
@@ -18,6 +19,11 @@ const PrivacyPolicy = () => {
 
   return (
     <div className="tc-container">
+      <Helmet>
+        <title>Privacy Policy | ConsultCraft Inc.</title>
+        <meta name="description" content="Read the official Privacy Policy for ConsultCraft Inc. and our product SportsCove. Understand how we collect, use, and protect your personal information." />
+      </Helmet>
+
       <div className="tc-updated">Privacy Policy</div>
 
       <div className="tc-content">

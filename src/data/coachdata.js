@@ -25,7 +25,11 @@ export const coaches = {
     journey: "Throughout his professional career, Chahal has demonstrated remarkable consistency and power, maintaining his unbeaten streak across multiple professional boxing promotions. His fights have been featured across various Indian boxing leagues and promotions, including appearances in The Punch Boxing, Indian Pro Boxing League, and other prestigious domestic circuits. Akshay's ability to remain undefeated while facing increasingly challenging opposition speaks to both his technical prowess and mental fortitude inside the ring.",
     smalltitle: "A New Chapter in Indian Boxing",
     meet: "Chahal's story represents the growing professionalization of boxing in India, where talented fighters like him are finding more opportunities to showcase their skills on legitimate professional platforms. His nickname \"WEAPON\" reflects not just his fighting style but his approach to the sport – precise, calculated, and devastatingly effective when the opportunity presents itself. As Indian professional boxing continues to evolve and gain international recognition, fighters like Akshay Chahal serve as ambassadors for the sport's future in the subcontinent.",
-    // trainWith: "Train with Akshay to improve your skills and achieve your fitness goals.",
+    trainVideo: "/asset/supercoaches/akshay/Akshay Chahal Super Coach - Boxing.mp4",
+  
+  // Add the text you want to display over the video
+  trainWith: "", // <-- ADD THIS LINE
+    // trainWith: "Train with Jitesh to achieve your sporting dreams."// trainWith: "Train with Akshay to improve your skills and achieve your fitness goals.",
   },
   siddhi: {
     name: "SIDDHI THAKKAR",
@@ -50,6 +54,13 @@ export const coaches = {
     journey: "Siddhi's background as a national-level kickboxer adds to her credibility, she doesn't just talk about fitness and wellness, she lives it. She is also the co-founder of Protein Chef Café, a health-focused culinary venture founded by her brother, Kaushal Thakkar, that brings nutritious, protein-rich food options to the community. Her newly launched website empower her journey in and YouTube channel are more than just platforms they're safe havens for women to learn, share, and heal.",
     smalltitle:"Empower Her: Wellness as a Movement",
     meet: "Siddhi's initiative stands at the intersection of wellness, education, and empowerment. Through Empower Her Journey, she creates a trusted space for women to explore topics like breast health, hormonal wellness, and emotional balance. The platform hosts expert-led workshops, engaging content, and culturally relevant programs that speak to the real, everyday needs of women. With plans for online and offline workshops, curated health content, and real-life stories from brave women, this isn't just a platform, it's a movement that aims to drive systemic change in women's healthcare.",
+    trainVideo: "/asset/supercoaches/siddhi/Siddhi Thakkar - Boxing_Website .mp4", // <-- ADD THIS LINE
+  
+  // Add the text you want to display over the video
+  trainWith: "", // <-- ADD THIS LINE
+    // trainWith: "Train with Jitesh to achieve your sporting dreams."
+
+    
     // trainWith: "Join Siddhi’s training sessions to enhance your performance."
   },
   jitesh: {
@@ -76,6 +87,11 @@ export const coaches = {
     journey: "Under Coach Banjan's expert guidance, numerous fighters have achieved remarkable success on the global stage. His training roster includes fighters from renowned international promotions such as ONE Championship, Brave FC, Matrix Fight Night, and Max Muay Thai. He has mentored elite fighters like Tarun Hiremath and Abdul Kahaf, who now compete under Matrix Fight Night, along with other notable athletes including Srikant Sekhar, Shyamanand, Clinton D Cruz, Kantharaj Agasa, Manjit Kolekar, and Ajay among others who have joined ICSA under his leadership.",
     smalltitle:"Forging Fighters: The Akhaada Behind Indian MMA",
     meet: "Coach Jitesh Banjan is not only a master on the mats but also a savvy business leader whose contributions have had a profound impact on MMA in India. Established in 2011, ICSA teaches a unique MMA fighting style and conditioning programs to a new generation of individuals striving to reach their competitive fighting, fitness, self-defense, and nutrition goals. His dedication to the sport and innovative business strategies continue to drive ICSA's success and influence in the fighting community, making it what many call in Indian terminology, a proper \"akhaada\" - a place where warriors are forged.",
+    // Add the path to the video file
+  trainVideo: "/asset/supercoaches/jitesh/Jitesh Banjan Super Coach- MMABJJ (1).mp4", // <-- ADD THIS LINE
+  
+  // Add the text you want to display over the video
+  trainWith: "", // <-- ADD THIS LINE
     // trainWith: "Train with Jitesh to achieve your sporting dreams."
   },
 
@@ -105,6 +121,14 @@ export const coaches = {
     journey: "Starting his martial arts journey at a local gym with fundamental kickboxing training, Ashish quickly realized his potential and hunger for improvement. His dedication paid off as he began accumulating victories in amateur boxing competitions. The breakthrough came in 2018 when he won the KFI kickboxing national championship, followed by his first gold medal at the Muay Thai National Championships in 2019. His most significant amateur achievement came in 2020 when he won India's first-ever bronze medal at the IFMA World Championship in Korea, defeating Chinese Taipei's Jhao Cyun Ciou in the Elite Category. This historic victory established him as one of India's premier Muay Thai talents.",
     smalltitle:"The Knockout Comeback: Ashish’s Path to Glory",
     meet: "Ashish's journey to professional success was marked by a devastating setback that tested his resolve. During his third professional fight in a top Thai boxing league in Thailand, he suffered a severe jaw injury that would change his perspective on the sport forever. Rather than ending his career, this traumatic experience became a catalyst for his greatest achievements. After recovering from his jaw injury, Ashish won 8 out of 14 professional fights, demonstrating remarkable resilience and determination. His comeback culminated in his historic victory at Bangla Stadium, where he became the first Indian to win the prestigious championship belt with the fastest knockout of the night.",
+    trainVideo: "/asset/supercoaches/ashish/Ashish Raman- Muay Thai_Website.mp4", // <-- ADD THIS LINE
+  
+  // Add the text you want to display over the video
+  trainWith: "", // <-- ADD THIS LINE
+    // trainWith: "Train with Jitesh to achieve your sporting dreams."
+
+    
+    
     // trainWith: "Train with Jitesh to achieve your sporting dreams."
   },
 
@@ -134,7 +158,13 @@ export const coaches = {
     journey: "The legitimacy and effectiveness of Reiki healing is demonstrated by its widespread acceptance in conventional healthcare settings. Reiki is widely used in the U.S. in over 800 hospitals during conventional treatments and rehabilitation periods. Such prestigious institutions include The Cleveland Clinic and The Brigham and Women's Hospital, where energy healing is integrated alongside traditional medical approaches to provide comprehensive patient care.",
     smalltitle:"Reconnecting the Soul: Healing Through Reiki",
     meet: "Efi's mission extends beyond healing individual ailments, it's about guiding people on a journey to reconnect to their essence. In a world filled with stress, disconnection, and energetic imbalances, her Reiki practice serves as a sanctuary where individuals can return to their natural state of wholeness. Through the gentle channeling of universal life force energy, she helps clients release what no longer serves them and embrace their authentic selves, creating lasting transformation that ripples through all aspects of their lives.",
+    
+    trainVideo: "/asset/supercoaches/efi/Efi Kalorkoti Super Coach - ReikiMeditationKundalini Activation .mp4",
+  
+  // Add the text you want to display over the video
+  trainWith: "", // <-- ADD THIS LINE
     // trainWith: "Train with Jitesh to achieve your sporting dreams."
+  // trainWith: "Train with Jitesh to achieve your sporting dreams."
   },
 
   dylan: {
@@ -162,6 +192,12 @@ export const coaches = {
     smalltitle:"From Cage to Corner: Dylan’s UFC-Level Coaching Philosophy",
     meet: "Dylan's coaching philosophy is rooted in the work ethic and technical precision that carried him from New England's regional scene to competing on the sport's most watched developmental platform. His instruction methodology draws from real UFC-level experience, emphasizing the fundamental skills, conditioning standards, and mental toughness required to compete at professional levels. Whether working with beginners developing basic MMA skills, intermediate fighters refining their techniques across multiple disciplines, or advanced competitors preparing for amateur and professional debuts, Dylan provides authentic instruction backed by proven credentials and elite-level experience. His unique combination of UFC Contender Series appearance, extensive regional championship experience, and genuine passion for developing the next generation of New England fighters makes him an exceptional coach for anyone seeking to understand what it truly takes to compete at the highest levels of mixed martial arts.",
     // trainWith: "Train with Jitesh to achieve your sporting dreams."
+    trainVideo: "/asset/supercoaches/dylan/Dylan Lockard Super Coach  - MMA .mp4",
+  
+  // Add the text you want to display over the video
+  trainWith: "", // <-- ADD THIS LINE
+    // trainWith: "Train with Jitesh to achieve your sporting dreams."
+
   },
 
   anil: {
@@ -266,6 +302,12 @@ export const coaches = {
     journey: "With professional credentials that bridge traditional yoga teacher training and specialized aerial yoga certification, Anisha has developed a comprehensive understanding of body mechanics, breath work, and mindful movement that translates seamlessly between earth-based and airborne practices. Her expertise in aerial yoga - a discipline that combines traditional yoga poses with the support of silk hammocks - allows her to offer students unique benefits including spinal decompression, enhanced flexibility, core strengthening, and the confidence-building experience of defying gravity. This innovative approach complements her solid foundation in traditional yoga styles, creating a well-rounded practice that appeals to both yoga purists seeking authentic instruction and adventure-seekers drawn to the playful creativity of aerial work.",
     smalltitle:"Grace in Flight: Anisha’s Journey through Aerial and Traditional Yoga",
     meet: "Anisha's coaching philosophy centers on making yoga accessible, joyful, and transformative for practitioners of all levels and backgrounds. Her instruction methodology seamlessly weaves together the philosophical foundations of traditional yoga with the dynamic physical challenges of aerial practice, emphasizing proper alignment, breath awareness, and mindful progression whether students are flowing through sun salutations on the mat or floating in silk hammocks above the ground. Whether working with beginners discovering their first downward dog or advanced practitioners ready to attempt aerial inversions, Anisha provides patient, encouraging guidance that honors each student's individual journey while pushing boundaries in a safe, supportive environment. Her unique combination of traditional yoga authenticity, aerial innovation, and genuine passion for sharing the transformative power of yoga makes her an exceptional teacher for anyone seeking to deepen their practice, overcome physical limitations, or simply discover the joy of movement in new dimensions.",
+    trainVideo: "/asset/supercoaches/anisha/anishawalisupercoachyoga.mp4",
+  
+  // Add the text you want to display over the video
+  trainWith: "", // <-- ADD THIS LINE
+    // trainWith: "Train with Jitesh to achieve your sporting dreams."
+    
     // trainWith: "Train with Jitesh to achieve your sporting dreams."
   },
 
@@ -472,11 +514,20 @@ export const coaches = {
 
   aaron: {
     name: "AARON MATHEW",
-    Sports:"KickBoxing",
-    Wellness:"Yoga",
-    Experience:"5+ years",
     Location:"India",
     CoachType:"Super",
+    skills:{
+      Kickboxing:{
+        displayName:"Kickboxing",
+        category:"Sports",
+        experience:"5+ years"
+      },
+      Yoga:{
+        displayName: "Yoga",
+        category: "Wellness",
+        experience: "5+ years",
+      }
+    },
     coverPosition:"50% 10%",
     journeyPosition:"50% 10%",
     historyPosition:"50% 10%",
@@ -547,11 +598,20 @@ export const coaches = {
 
   abhishek: {
     name: "ABHISHEK NEGI",
-    Sports:"KungFu",
-    Wellness:"Meditation",
-    Experience:"2+ years",
     Location:"India",
     CoachType:"Super",
+    skills:{
+      KungFu:{
+        displayName:"KungFu",
+        category:"Sports",
+        experience:"2+ years"
+      },
+      Meditation:{
+        displayName: "Meditation",
+        category: "Wellness",
+        experience: "2+ years",
+      }
+    },
     coverPosition:"50% 10%",
     journeyPosition:"50% 10%",
     historyPosition:"50% 10%",
@@ -627,6 +687,13 @@ export const coaches = {
     journey: "Asim Bin Saleh Al Dayani represents the peak of Indian striking excellence, rising from Barkas, Hyderabad, to claim five Muay Thai national titles, two national kickboxing championships, and prestigious WMC State and National belts. Competing across Muay Thai, kickboxing, and MMA, Asim has demonstrated the technical precision, tactical adaptability, and mental toughness that define elite combat athletes. His journey from national-level amateur success to professional and international competition, including a podium finish at the UAE Muay Thai Nation Championship, reflects his relentless pursuit of mastery and his ability to perform under pressure. This championship pedigree positions Asim as one of India’s most versatile and accomplished strikers, capable of inspiring and guiding the next generation of fighters.",
     smalltitle:"From Barkas to the World Stage: Championing Discipline and Precision",
     meet: "Asim Bin Saleh Al Dayani’s coaching philosophy is built on the journey that took him from training for self-defence in Barkas, Hyderabad, to standing on national and international podiums as a champion. His rise to five Muay Thai national titles, two national kickboxing championships, and WMC State and National belts reflects the discipline, adaptability, and technical mastery that define his approach. Blending timeless striking fundamentals, balance, guard, footwork, and precision, with the tactical versatility of Muay Thai, kickboxing, and MMA, Asim tailors his training for beginners, fitness enthusiasts, and competitive fighters alike. His championship credentials and passion for developing the next generation of martial artists make him a mentor who teaches not just technique, but the mindset to excel at every level of competition.",
+    trainVideo: "/asset/supercoaches/asim/Ashish Raman- Muay Thai_Website.mp4",
+  
+  // Add the text you want to display over the video
+  trainWith: "", // <-- ADD THIS LINE
+    // trainWith: "Train with Jitesh to achieve your sporting dreams."
+
+    
     // trainWith: "Train with Jitesh to achieve your sporting dreams."
   },
 
@@ -695,8 +762,138 @@ export const coaches = {
     meet: "Operating with the motto \"Death before Dishonour\" and carrying himself as a \"son of kings\", Raghavendra's coaching philosophy is rooted in the ancient warrior traditions of Rajasthan's royal lineage, where honor, discipline, and martial excellence were essential virtues. His instruction methodology spans the complete spectrum of MMA - from fundamental striking and grappling techniques to advanced cage strategies, fight preparation, and the mental fortitude required for professional competition. Whether working with beginners seeking fitness and self-defense skills, intermediate practitioners developing their mixed martial arts foundation, or aspiring competitive fighters preparing for amateur and professional debuts, Raghavendra provides authentic instruction backed by an undefeated record and proven regional ranking. His unique combination of royal heritage, undefeated professional success, and genuine passion for developing India's next generation of mixed martial artists makes him an exceptional coach for anyone seeking to master the warrior arts in the land of kings and deserts.",
     // trainWith: "Train with Jitesh to achieve your sporting dreams."
   },
-
+  hardeep: {
+    name: "HARDEEP SINGH DHILLON",
+    // Sports:"Boxing",
+    // Experience:"15+ years",
+    // Location:"India",
+    // CoachType:"Super",
+    // thumbnail:"/asset/thumbnails/Akshay_Chahal.png",
+    coverImage: "/asset/supercoaches/hardeep/Hardeep01.jpeg",
+    coverPosition:"50% 20%",
+    journeyPosition:"center",
+    historyPosition:"50% 20%",
+    meetPosition:"center",
+    trainPosition:"50% 20%",
+    secondImage: "/asset/supercoaches/hardeep/Hardeep02.jpeg",
+    thirdImage: "/asset/supercoaches/hardeep/Hardeep02.jpg",
+    fourthImage: "/asset/supercoaches/hardeep/Hardeep03.jpg",
+    // carouselImage: "/asset/akshaychahal.png",
+    subtitle1: "Olympian Greco Roman Wrestler",
+    subtitle2: "Rio 2016 Olympian (Greco-Roman Wrestling)",
+    subtitle3: "Commonwealth Champion (Gold Medalist)",
+    subtitle4:"Asian Championship Silver Medalist",
+    subtitle5:"Pioneer of Indian Heavyweight Greco-Roman Wrestling",
+    history: "Hardeep Singh stands as a monumental figure in Indian wrestling history, representing the pinnacle of Greco-Roman wrestling excellence in the subcontinent. Born December 20, 1990, in the farming village of Dahola in Haryana's Jind district, Hardeep's journey from rural beginnings to Olympic glory exemplifies the transformative power of dedication and expert coaching. In March 2016, he achieved a historic milestone by becoming the first Indian heavyweight Greco-Roman wrestler to qualify for the Olympics, earning his place at the Rio 2016 Olympics in the prestigious 98kg category. This breakthrough qualification not only marked a personal triumph but also opened new pathways for Indian wrestlers in the technically demanding discipline of Greco-Roman wrestling.",
+    journey: "Hardeep's elite credentials include a Commonwealth Championship gold medal in 2013 and a silver medal finish at the 2016 Asian Wrestling Championships, establishing him among Asia's top Greco-Roman competitors. His Olympic journey was supported by JSW Sports, competing against Turkey's Cenk Ildem in the round-of-16 at Rio's Carioca Arena, representing India on wrestling's biggest stage. Training at the Sports Authority of India's regional centers after being identified for his exceptional talent during his school days, Hardeep mastered the unique technical demands of Greco-Roman wrestling, where only upper body techniques are permitted, requiring extraordinary strength, balance, and tactical precision that differs significantly from freestyle wrestling.",
+    smalltitle: "Olympic-Grade Greco-Roman Wrestling, Rooted in Discipline",
+    meet: "Hardeep's coaching philosophy is rooted in the discipline and systematic progression that carried him from village wrestling grounds to Olympic competition, emphasizing the fundamental importance of proper technique development and mental toughness. His instruction methodology draws from years of elite-level training and competition experience, focusing on the specific technical requirements of Greco-Roman wrestling including throws, lifts, and upper body control that define this classical Olympic discipline. Whether working with young wrestlers learning basic stance and grip fighting, intermediate athletes developing their throwing techniques, or advanced competitors preparing for national and international tournaments, Hardeep provides authentic instruction backed by Olympic credentials and championship experience. His unique combination of Olympic qualification, Commonwealth gold medal success, and genuine understanding of the Indian wrestling development pathway makes him an exceptional coach for anyone seeking to master the ancient art of Greco-Roman wrestling while following in the footsteps of India's pioneering Olympic heavyweight.",
+    trainVideo: "/asset/supercoaches/hardeep/Hardeep Singh- Wrestling_Website.mp4",
   
+  // Add the text you want to display over the video
+  trainWith: "", // <-- ADD THIS LINE
+    // trainWith: "Train with Jitesh to achieve your sporting dreams."// trainWith: "Train with Akshay to improve your skills and achieve your fitness goals.",
+  },
+  
+  raghav: {
+    name: "RAGHAV JAMWAL",
+    // Sports:"Boxing",
+    // Experience:"15+ years",
+    // Location:"India",
+    // CoachType:"Super",
+    // thumbnail:"/asset/thumbnails/Akshay_Chahal.png",
+    coverImage: "/asset/supercoaches/raghav/Raghav01.jpg",
+    coverPosition:"50% 20%",
+    journeyPosition:"center",
+    historyPosition:"50% 20%",
+    meetPosition:"center",
+    trainPosition:"50% 20%",
+    secondImage: "/asset/supercoaches/raghav/Raghav02.jpg",
+    thirdImage: "/asset/supercoaches/raghav/Raghav03.jpg",
+    fourthImage: "/asset/supercoaches/raghav/Raghav05.jpg",
+    // carouselImage: "/asset/akshaychahal.png",
+    subtitle1: "Asian Bronze & 4x National Gold Medalist (Grappling)",
+    subtitle2: "Indian National Team Captain",
+    subtitle3: "Elite Multi-Sport Athlete",
+    subtitle4:"Sports Business Executive (IIM MBA)",
+    subtitle5:"GRAPPLING",
+    subtitle6:"BJJ",
+    history: "Raghav Jamwal embodies the spirit of sporting excellence across multiple disciplines, transforming from a near-Olympic qualifier in Modern Pentathlon to India's most successful grappling athlete and national team captain. His journey from competing in the world's most complex Olympic sport - Modern Pentathlon (combining fencing, swimming, equestrian, shooting, and running) where he achieved a remarkable #29 ranking in Asia - to mastering the art of grappling demonstrates his exceptional athletic adaptability and mental toughness. As a 4-time National Gold Medalist and Asian Championships Bronze Medalist who led India to third place at the 2023 Asian Grappling Championships in Astana, Kazakhstan, Raghav has established himself as the face of Indian grappling on the international stage.",
+    journey: "Training at Delhi's prestigious Crosstrain Fight Club under Siddharth Singh (India's first Brazilian Jiu-Jitsu Brown Belt), Raghav has developed expertise that spans traditional grappling, Brazilian Jiu-Jitsu, and submission wrestling techniques. His role as Core Team member for ADCC & AJP India, combined with his leadership as national team captain, gives him unparalleled insights into both the technical and strategic aspects of modern grappling competition. His diverse combat sports background includes a Muay Thai bronze medal, showcasing his striking skills alongside his ground game mastery, making him one of India's most well-rounded martial artists.",
+    smalltitle: "Multi-Sport Excellence with Strategic and Mental Mastery",
+    meet: "Raghav's coaching philosophy is rooted in overcoming challenges and pursuing excellence in unconventional paths, drawing from his experience of transitioning between vastly different sports while maintaining elite-level performance. As an IIM Rohtak MBA graduate working in sports operations for premier fitness events like HYROX and IRONMAN India, he brings both athletic excellence and business acumen to his coaching approach. His instruction methodology emphasizes technical precision, mental resilience, and strategic thinking developed through years of international competition across multiple disciplines. Whether working with beginners learning fundamental grappling techniques, intermediate athletes developing submission skills, or advanced competitors preparing for national and international tournaments, Raghav provides authentic instruction backed by proven championship credentials and genuine understanding of what it takes to excel in combat sports. His unique combination of multi-sport elite achievement, national team leadership, and business expertise makes him an exceptional coach for anyone seeking to master grappling while developing the mindset and skills needed for success both on and off the mats.",
+    // trainVideo: "/asset/supercoaches/hardeep/Hardeep Singh- Wrestling_Website.mp4",
+  
+  // Add the text you want to display over the video
+  trainWith: "", // <-- ADD THIS LINE
+    // trainWith: "Train with Jitesh to achieve your sporting dreams."// trainWith: "Train with Akshay to improve your skills and achieve your fitness goals.",
+  },
+
+  karan: {
+    name: "KARAN CHAUHAN",
+    // Sports:"Boxing",
+    // Experience:"15+ years",
+    // Location:"India",
+    // CoachType:"Super",
+    // thumbnail:"/asset/thumbnails/Akshay_Chahal.png",
+    coverImage: "/asset/supercoaches/karan/Karan01.jpg",
+    coverPosition:"50% 20%",
+    journeyPosition:"center",
+    historyPosition:"50% 20%",
+    meetPosition:"center",
+    trainPosition:"50% 20%",
+    secondImage: "/asset/supercoaches/karan/Karan02.jpg",
+    thirdImage: "/asset/supercoaches/karan/Karan04.jpg",
+    fourthImage: "/asset/supercoaches/karan/Karan06.jpg",
+    // carouselImage: "/asset/akshaychahal.png",
+    subtitle1: "Host, The Combat Exchange Podcast",
+    subtitle2: "Ranked Pro Featherweight (South Asia)",
+    subtitle3: "Professional MMA Veteran (Ronin FC, X1)",
+    subtitle4:"Boxing",
+    subtitle5:"MMA",
+    history: "Karan Chauhan stands as one of India's most accomplished mixed martial artists, combining National Championship credentials with extensive professional experience across the subcontinent's premier MMA organizations. As a National MMA Champion, Karan has proven his elite-level skills at the highest competitive tier in Indian mixed martial arts, demonstrating the technical mastery, fight IQ, and championship mentality that separates true champions from contenders. His professional record of 2-5-0 reflects the journey of a dedicated warrior who has consistently stepped up to face challenging opponents in organizations like Ronin FC, X1 International, Warrior's Dream Series, and Bidang Fighting Championship, gaining invaluable cage experience that translates directly into comprehensive coaching expertise.",
+    journey: "Beyond his fighting accomplishments, Karan has established himself as a leading voice in Indian combat sports media through \"The Combat Exchange\" podcast, where he provides expert analysis and insights into the MMA world alongside co-host Prashant Pasunuri. This unique perspective as both active competitor and media personality gives him unparalleled understanding of the sport from multiple angles - technical, strategic, promotional, and developmental. His experience competing across both Featherweight and Bantamweight divisions showcases his versatility and deep understanding of weight management, training adaptation, and the tactical adjustments required for success at different weight classes in professional MMA.",
+    smalltitle: "Crafting Complete MMA Fighters with a Champion’s Mindset",
+    meet: "Karan's coaching philosophy is rooted in the championship mindset and systematic approach that earned him National Champion status, emphasizing the importance of technical fundamentals, mental preparation, and strategic thinking in mixed martial arts development. His instruction methodology draws from years of elite-level competition and his ongoing involvement in India's MMA scene, focusing on building complete fighters who understand both the physical and mental demands of professional competition. Whether working with beginners developing basic MMA skills, intermediate fighters refining their techniques across striking and grappling disciplines, or advanced competitors preparing for amateur and professional debuts, Karan provides authentic instruction backed by National Championship credentials and extensive organizational experience. His unique combination of championship success, multi-promotional fighting experience, and genuine passion for growing India's MMA community makes him an exceptional coach for anyone seeking to understand what it truly takes to compete and succeed at the highest levels of Indian mixed martial arts.",
+    // trainVideo: "/asset/supercoaches/hardeep/Hardeep Singh- Wrestling_Website.mp4",
+  
+  // Add the text you want to display over the video
+  trainWith: "", // <-- ADD THIS LINE
+    // trainWith: "Train with Jitesh to achieve your sporting dreams."// trainWith: "Train with Akshay to improve your skills and achieve your fitness goals.",
+  },
+
+  adithya: {
+    name: "Adithya Raj Sharma",
+    // Sports:"Boxing",
+    // Experience:"15+ years",
+    // Location:"India",
+    // CoachType:"Super",
+    // thumbnail:"/asset/thumbnails/Akshay_Chahal.png",
+    coverImage: "/asset/supercoaches/aditya/Aditya01.jpg",
+    coverPosition:"50% 20%",
+    journeyPosition:"center",
+    historyPosition:"50% 20%",
+    meetPosition:"center",
+    trainPosition:"50% 20%",
+    secondImage: "/asset/supercoaches/aditya/Aditya03.jpg",
+    thirdImage: "/asset/supercoaches/aditya/Aditya04.jpg",
+    fourthImage: "/asset/supercoaches/aditya/IMG_1780.jpg",
+    // carouselImage: "/asset/akshaychahal.png",
+    subtitle1: "Kickboxing",
+    subtitle2: "Boxing",
+    // subtitle3: "Commonwealth Champion (Gold Medalist)",
+    // subtitle4:"Asian Championship Silver Medalist",
+    // subtitle5:"Pioneer of Indian Heavyweight Greco-Roman Wrestling",
+    history: "Aditya has revolutionized combat sports coaching in Eastern India, building a massive digital following through his engaging and authentic approach to boxing and kickboxing instruction from his base in Dhanbad, Jharkhand. As a National Kickboxing Silver Medalist, Aditya brings legitimate competitive credentials to his coaching, having proven his skills at India's highest competitive level before transitioning his expertise into education and inspiration. With tens of thousands of followers on Instagram through @fitaditya_official, Aditya has proven that passionate, knowledgeable coaching can transcend geographical boundaries and inspire fighters across the region. His viral content combines technical instruction with motivational messaging, making complex boxing and kickboxing techniques accessible to practitioners regardless of their experience level or location.",
+    journey: "Operating from Dhanbad, a city better known for its coal mining heritage than combat sports, Aditya has become a trailblazer in bringing world-class boxing and kickboxing training to Jharkhand's emerging fitness community. His expertise spans the complete spectrum of striking arts - from fundamental boxing stance and footwork to advanced kickboxing combinations that incorporate kicks, punches, knees, and defensive techniques. Through his social media platform, Aditya has demonstrated an exceptional ability to break down complex movement patterns into digestible lessons, earning him recognition as one of Eastern India's most influential combat sports educators and building a loyal following of students who appreciate his authentic, results-driven approach.",
+    smalltitle: "Building a Community Through Accessible Elite Striking",
+    meet: "Aditya's coaching philosophy centers on making elite-level combat sports training accessible to everyone, regardless of background or starting point, while building a strong community of practitioners who support each other's growth. His instruction methodology combines traditional boxing and kickboxing fundamentals with modern training techniques, always emphasizing proper form, safety protocols, and progressive skill development. Whether working with beginners learning basic striking techniques through his digital content, intermediate practitioners seeking to refine their combination work, or advanced students preparing for competitive opportunities, Aditya provides instruction that balances technical excellence with genuine encouragement and community building. His unique combination of massive social media influence, authentic combat sports expertise, and genuine passion for transforming lives through boxing and kickboxing makes him an exceptional coach for anyone seeking to develop striking skills while becoming part of a supportive, motivated training community in Eastern India's growing martial arts scene.",
+    // trainVideo: "/asset/supercoaches/hardeep/Hardeep Singh- Wrestling_Website.mp4",
+  
+  // Add the text you want to display over the video
+  trainWith: "", // <-- ADD THIS LINE
+    // trainWith: "Train with Jitesh to achieve your sporting dreams."// trainWith: "Train with Akshay to improve your skills and achieve your fitness goals.",
+  },
 
 
 

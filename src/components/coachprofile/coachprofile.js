@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { coaches } from "../../data/coachdata";
 import "./coachprofile.css";
+import { Helmet } from 'react-helmet-async';
 
 export default function CoachProfile() {
   const { coachId } = useParams();
@@ -16,9 +17,13 @@ export default function CoachProfile() {
 
   return (
     <div className="overlap-scroll-container">
+      <Helmet>
+        <title>{`Coach ${coach.name} | SportsCove`}</title>
+        <meta name="description" content={`Learn more about ${coach.name}, a professional coach specializing in ${coach.subtitle1}. Discover their history, journey, and how to train with them on SportsCove.`} />
+      </Helmet>
       {/* Back Button */}
       <button className="back-button" onClick={() => navigate(-1)}>
-        ←
+         <img src="/asset/back.png" alt="Back" className="back-icon" />
       </button>
 
       {/* Cover */}
@@ -84,15 +89,29 @@ export default function CoachProfile() {
       {/* Train */}
       <section
         className="overlap-card train"
-        style={{
-          backgroundImage: `url(${coach.secondImage})`,
-          backgroundPosition: coach.trainPosition || "center", // 👈 dynamic
-        }}
+        // style={{
+        //   backgroundImage: `url(${coach.secondImage})`,
+        //   backgroundPosition: coach.trainPosition || "center", // 👈 dynamic
+        // }}
       >
-        <div className="card-content">
-          <h2>TRAIN WITH {coach.name} ON SPORTCOVE</h2>
-          <p>{coach.trainWith}</p>
-        </div>
+        {/* Train */}
+{/* Train */}
+<section className="overlap-card train">
+  <video className="background-video" autoPlay loop muted playsInline>
+    <source src={coach.trainVideo} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div className="card-content train-content"> {/* Added a new class */}
+    <div className="train-title-container">
+      <span className="train-subtitle">TRAIN WITH</span>
+      <h2 className="train-coach-name">{coach.name}</h2>
+      <span className="train-subtitle">on</span>
+      <h3 className="train-platform-name">SPORTSCOVE</h3>
+    </div>
+    {/* Optional: You can keep the description paragraph below the title */}
+    <p className="train-description">{coach.trainWith}</p> 
+  </div>
+</section>
       </section>
     </div>
   );

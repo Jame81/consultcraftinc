@@ -2,12 +2,18 @@ import React from 'react';
 import './about.css';
 import teamImage from './teamexp.jpg'; // Make sure to place the image in /src/assets/
 import "slick-carousel/slick/slick.css"; 
+import { Helmet } from 'react-helmet-async';
 import "slick-carousel/slick/slick-theme.css";
 import TeamCarousel from './teamcarousel';
 
 const About = () => {
   return (
     <div className="about-wrapper">
+      {/* SEO Tags */}
+      <Helmet>
+        <title>About Us | ConsultCraft Inc.</title>
+        <meta name="description" content="Learn about ConsultCraft Inc., a global tech company building innovative platforms like SportsCove© and ConsultCove© to connect people in sports, business, and education." />
+      </Helmet>
       {/* About Section */}
       <div className="about-page">
         <h1 className="about-title">ABOUT US</h1>

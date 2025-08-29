@@ -65,16 +65,16 @@ const TeamCarousel = () => {
   return (
     <section className="team-section">
       <h2 className="team-heading">MEET OUR TEAM</h2>
-      <div className="carousel-wrapper">
+      <div className="team-carousel-wrapper">
         {currentIndex > 0 && (
           <button className="carousel-nav carousel-nav-left" onClick={prevSlide}>
             <ChevronLeft size={24} />
           </button>
         )}
 
-        <div className="carousel-container" ref={containerRef}>
+        <div className="team-carousel-container" ref={containerRef}>
           <div
-            className="carousel-track"
+            className="team-carousel-track"
             ref={trackRef}
             style={{
               // 👇 Use dynamic values from state for the transform

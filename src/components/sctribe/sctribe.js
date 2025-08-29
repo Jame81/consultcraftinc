@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./sctribe.css";
 import { ChevronDown } from "lucide-react";
+import { Helmet } from 'react-helmet-async';
 import { coaches } from "../../data/coachdata";
 import CoachCard from "./coachcard";
 
@@ -91,6 +92,10 @@ export default function Sctribe() {
 
   return (
     <div className="sctribe-container">
+      <Helmet>
+        <title>SportsCove Tribe | Find Your Coach</title>
+        <meta name="description" content="Meet the SportsCove Tribe. Browse and filter through our world-class coaches in sports and wellness to find the perfect expert for your journey." />
+      </Helmet>
       <h1 className="sctribe-header">SPORTSCOVE TRIBE</h1>
       <p className="sctribe-title">Meet the Tribe. Find your Coach</p>
 

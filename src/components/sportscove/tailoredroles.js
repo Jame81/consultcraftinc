@@ -6,19 +6,19 @@ export default function TailoredRoles() {
     {
       title: "Guest Mode",
       description:
-        "Guest Mode lets new users explore the platform without signing up. They can browse coach profiles, view available sessions, and get a feel for the app’s features making it easy to discover what's possible before committing.",
+        "Lets new users explore the platform without signing up. Browse coaches and get a feel for the app!",
       icon: "/asset/Guest (1).png"
     },
     {
       title: "Learner Mode",
       description:
-        "Learner Mode unlocks the full training experience, allowing users to book sessions, receive feedback and practice tasks, and stay on track with reminders. It’s designed to support continuous growth across multiple sports.",
+        "Gives you the full training experience - book sessions, get feedback, complete practice tasks and stay on track with your sport journey.",
       icon: "/asset/Learner.png"
     },
     {
       title: "Coach Mode",
       description:
-        "Coach Mode empowers trainers to manage sessions, engage with learners, and share tailored insights. From scheduling to feedback, coaches can build their brand, track learner progress, and foster lasting skill development.",
+        "Lets coaches schedule sessions and give feedback. They can track learner progress and support long-term skill development.",
       icon: "/asset/Coach (1).png"
     }
   ];
